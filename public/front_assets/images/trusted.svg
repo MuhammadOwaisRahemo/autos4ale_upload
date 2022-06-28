@@ -1,0 +1,12 @@
+<svg id="_48" data-name="48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="_48_Background_Mask_" data-name="48 (Background/Mask)" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="_48_Background_Mask_2" data-name="48 (Background/Mask)" width="24" height="24" fill="none"/>
+  <g id="_48-2" data-name="48" clip-path="url(#clip-path)">
+    <path id="Vector" d="M7.2,16.39,4.63,14.96A8.973,8.973,0,0,1,0,7.1V0H14.39V7.1a9.011,9.011,0,0,1-4.62,7.87Z" transform="translate(4.6 3.6)" fill="#4689f2" stroke="#4689f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" stroke-dasharray="0 0"/>
+    <path id="Vector-2" data-name="Vector" d="M0,1.26,2.03,3.3,5.34,0" transform="translate(9.13 9.35)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" stroke-dasharray="0 0"/>
+  </g>
+</svg>

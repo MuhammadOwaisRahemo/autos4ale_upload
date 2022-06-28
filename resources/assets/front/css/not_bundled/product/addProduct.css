@@ -1,0 +1,59 @@
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: #cccccc61;
+    border-radius: 3px;
+    border-image: initial;
+}
+
+legend {
+    display: block;
+    width: auto;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    font-size: 1.1rem;
+    float: initial !important;
+    margin-bottom: 0 !important;
+}
+#categorySubcategoryModal .nav button{
+    text-align: left;
+    color: #000;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: #717578;
+    font-weight: 700;
+}
+/* .sub-category-selection li{
+    list-style-type: circle !important;
+} */
+.chipCatAndSub{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+.catAndSub{
+    position: relative;
+    cursor: pointer;
+}
+.chipCatAndSub span{
+    background-color: #cccccc9e;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+.chipCatAndSub span i{
+    color: #0000008c;
+    vertical-align: middle;
+}

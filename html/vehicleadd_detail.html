@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<!-- Bootstrap CSS -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Auto4sale</title>
+	</head>
+<body>
+
+<div id="overlayer"></div>
+
+<span class="loader">
+	<span class="loader-inner">
+		<img src="images/loading.gif" class="img-fluid mx-auto d-block">
+	</span>
+</span>
+
+<div class="container-fluid header">
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo-black.svg" class="img-fluid">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" href="index.html">Cars</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="luxurycars.html">Luxury Cars</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="vans.html">Vans</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="bikes.html">Bikes</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="motorhomes.html">Motorhomes</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="caravans.html">Caravans</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="trucks.html">Trucks</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav">
+							<ul class="list-inline">
+								<!-- <li class="list-inline-item">
+									<a href="saved_search.html" class="nav-link fw-500">
+										<i class="fa-solid fa-heart"></i> Saved
+									</a>
+								</li> -->
+								<li class="list-inline-item dropdown">
+								<a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff !important;">
+								My Account
+								</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="my_vehicle.html">My Vehicle</a></li>
+										<li><a class="dropdown-item" href="vehicle_sale.html">Vehicles you’re Selling</a></li>
+										<li><a class="dropdown-item" href="subscription.html">Subscription</a></li>
+										<li><a class="dropdown-item" href="pay_history.html">Payment History</a></li>
+										<li><a class="dropdown-item" href="pay_method.html">Payment Method</a></li>
+										<li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+									</ul>
+								</li>
+							</ul>
+							<!-- <ul class="list-inline">
+								<li class="list-inline-item">
+									<a href="signup.html" class="nav-link fw-500">Register
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="nav-link btn btn-theme px-3 text-white" href="signin.html">
+									Sign In
+									</a>
+								</li>
+							</ul> -->
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid mt-5 mb-5 pb-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="user_sidebar">
+					<ul class="list-unstyled mb-0">
+						<li><a href="my_vehicle.html">My Vehicle</a></li>
+						<li><a href="vehicle_sale.html" class="active">Vehicles you’re Selling <i class="fa-solid fa-arrow-right"></i></a></li>
+						<li><a href="subscription.html">Subscription</a></li>
+						<li><a href="personal_detail.html">Personal details</a></li>
+						<li><a href="pay_history.html">Payment History</a></li>
+						<li><a href="pay_method.html">Payment Method</a></li>
+						<li><a href="index.html">Sign Out</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9 vehicleadd_price">
+				<div class="logintop_content">
+					<h1 class="fw-bold"><i class="fa-solid fa-arrow-left"></i> Vehicles you’re selling</h1>
+				</div>
+
+				<div class="row mt-3">
+					<div class="d-flex top_steps align-items-center">
+						<div class="content active text-theme">Vehicle Details</div>
+						<div class="border_line active"></div>
+						<div class="content active">Your advert</div>
+						<div class="border_line"></div>
+						<div class="content text_color">Package & Payment</div>
+					</div>
+				</div>
+
+				<h4 class="black_colored fs-16 mt-3">Now tell us your price and some more about the car</h4>
+				<p class="text_color fs-12">Our recommended selling price is:</p>
+
+				<div class="user_form mt-4 mb-2">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="input-group mb-3 price_field">
+								<input type="text" class="form-control" value="£14,340">
+								<span class="input-group-text position-relative">
+									<button class="btn plus">
+										<i class="fa-solid fa-plus"></i>
+									</button>
+									<button class="btn minus">
+										<i class="fa-solid fa-minus"></i>
+									</button>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<h4 class="fs-16 mb-0">About your car::</h4>
+				<p class="fs-16 fw-500 text_color">Change or add to your car’s details. You can see how your ad will look on the right.</p>
+
+				<div class="row vehicleadd_details">
+					<div class="col-md-12">
+						<input type="text" class="form-control active" placeholder="Title" value="Peugeot 3008 1.2 PureTech GT Line Euro 6 (s/s) 5dr">
+
+
+						<div class="position-relative edit">
+							<input type="text" class="form-control mt-3" placeholder="Subtittle i.e Full service history">
+							<i class="text_color fs-14">0/30</i>
+						</div>
+
+
+						<p class="text_color fs-12 mt-2">Use this to grab buyers’ attention from the search results page.</p>
+
+						<div class="position-relative edit active">
+							<textarea class="form-control">3D Connected Navigation, 18in Alloy Wheels - Detroit - Diamond Cut, Bluetooth Telephone Facility, Dark Tinted Rear Side and Tailgate Windows, Front and Rear Parking Sensors, Full LED Headlights, LED Foglamps including Static Cornering Function, Lane Departure Warning System, Mirror Screen, Programmable Cruise Control and Speed Limiter, Smartphone Charging Plate, Visio Park 1 - 180 Degree Colour Reversing Camera and Front Parking Sensors, Voice Recognition - Radio-Navigation-Telephony Features, Airbags - Driver and Front Passenger Side, Airbags - Front and Rear Curtain, Alarm, DSCS - Dynamic Stability Control and ASR - Electronic Anti-Skid System, Electric Parking Brake includes Hill Assist, Mistral Full-Grain Perforated Leather Steering Wheel with Aikinite Stitch Detail and Satin Chrome GT Line Emblem, Rear LED Peugeot Signature Claw Effect Lights - With Daylight Function</textarea>
+							<i class="fa-regular fa-pen-to-square"></i>
+						</div>
+						<p class="text_color fs-12 mt-2">These will appear in your ad. You can change them using the Add/Remove option.</p>
+
+						<div class="position-relative edit active">
+							<input type="text" class="form-control" value="2 Owners, Full service history, MOT Due: 29/04/2022">
+							<i class="fa-regular fa-pen-to-square"></i>
+						</div>
+						<p class="text_color fs-12 mt-2">Tell buyers about your car’s history and MOT.</p>
+
+						<div class="position-relative edit">
+							<input type="text" class="form-control" placeholder="Advert Text">
+							<i class="text_color fs-14">0/1000</i>
+						</div>
+						<p class="text_color fs-12 mt-2">This will appear at the top of your ad. Use it to persuade buyers to read further.</p>
+
+						<div class="position-relative edit">
+							<input type="text" class="form-control" placeholder="e.g. https://www.youtube.com/watch?v=-JnHT5fTOnQ">
+							<i class="text_color fs-14">0/100</i>
+						</div>
+						<p class="text_color fs-12 mt-2">This will enable you to show a YouTube video on your advert when purchasing the premium or ultimate packages</p>
+
+					</div>
+				</div>
+
+				<div class="vehicleadd_btm mt-2 text-end">
+					<a href="vehicleadd_photos.html" class="btn btn-theme">Continue</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer class="container-fluid pt-2">
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="images/logo-black.svg" class="img-fluid">
+				<p class="mt-3">Auto4sale is the newest way of selling a vehicle</p>
+				<ul class="list-unstyled mb-0">
+					<li>
+						<a href="#"><i class="fa-solid fa-envelope"></i> Hello@carentalis.mail.com</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-solid fa-phone"></i> 022-560-342-972</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Our Services</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="#">Rental Car</a></li>
+					<li><a href="#">Buy Car</a></li>
+					<li><a href="#">Upgrade Car</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Our Product</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="luxurycars.html">Luxury Car</a></li>
+					<li><a href="#">Sport Car</a></li>
+					<li><a href="#">Automatic Car</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Social Media</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Youtube</a></li>
+					<li><a href="#">Facebook</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="row text-center copyright_text bg-white py-3">
+		<div class="col-md-12">
+			<p class="mb-0">Copyright @Auto4sale 2022. All Right Reserved</p>
+		</div>
+	</div>
+
+</footer>
+	
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+$(window).load(function() {
+	$(".loader").delay(2000).fadeOut("slow");
+	$("#overlayer").delay(2000).fadeOut("slow");
+})
+</script>
+
+</body>
+</html>

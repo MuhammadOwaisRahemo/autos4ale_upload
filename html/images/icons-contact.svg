@@ -1,0 +1,16 @@
+<svg id="icons_contact" data-name="icons/contact" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Shape" d="M8.4,4.755C8.131,1.651,4.892.127,4.755.065A.688.688,0,0,0,4.344.01C.6.631.043,2.807.02,2.9a.7.7,0,0,0,.014.382c4.46,13.837,13.728,16.4,16.775,17.246.235.065.428.117.575.165a.673.673,0,0,0,.218.034.7.7,0,0,0,.293-.064A5.725,5.725,0,0,0,20.728,16.2a.7.7,0,0,0-.068-.432,6.7,6.7,0,0,0-4.393-3.059.69.69,0,0,0-.625.148,9.442,9.442,0,0,1-3,1.872C8.616,12.758,6.368,8.981,6.283,8.264c-.049-.4.873-1.817,1.935-2.968A.705.705,0,0,0,8.4,4.755Z" transform="translate(0 0)"/>
+    </clipPath>
+  </defs>
+  <rect id="icons_contact_background" data-name="icons/contact background" width="26" height="26" fill="rgba(0,0,0,0)"/>
+  <rect id="Rectangle" width="26" height="26" fill="rgba(255,0,0,0)"/>
+  <path id="Shape-2" data-name="Shape" d="M8.4,4.755C8.131,1.651,4.892.127,4.755.065A.688.688,0,0,0,4.344.01C.6.631.043,2.807.02,2.9a.7.7,0,0,0,.014.382c4.46,13.837,13.728,16.4,16.775,17.246.235.065.428.117.575.165a.673.673,0,0,0,.218.034.7.7,0,0,0,.293-.064A5.725,5.725,0,0,0,20.728,16.2a.7.7,0,0,0-.068-.432,6.7,6.7,0,0,0-4.393-3.059.69.69,0,0,0-.625.148,9.442,9.442,0,0,1-3,1.872C8.616,12.758,6.368,8.981,6.283,8.264c-.049-.4.873-1.817,1.935-2.968A.705.705,0,0,0,8.4,4.755Z" transform="translate(1.999 2.613)"/>
+  <g id="Group_99" data-name="Group 99" transform="translate(1.999 2.613)" clip-path="url(#clip-path)">
+    <g id="Colors_Primary" data-name="Colors/Primary" transform="translate(-1.999 -2.613)">
+      <rect id="Colors_Primary_background" data-name="Colors/Primary background" width="26" height="26" fill="rgba(0,0,0,0)"/>
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="26" height="26" fill="#fff"/>
+    </g>
+  </g>
+</svg>

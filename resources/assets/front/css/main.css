@@ -1,0 +1,221 @@
+.fc-button {
+    background: #f1f1f1;
+    border: none;
+    color: #797979;
+    text-transform: capitalize;
+    box-shadow: none !important;
+    border-radius: 3px !important;
+    margin: 0 3px !important;
+    padding: 6px 12px !important;
+    height: auto !important;
+}
+.calendar-events {
+    width: 300px;
+}
+
+.sidebar-hide .calendar-events {
+    width: 400px;
+}
+
+.calendar-inner {
+    max-width: calc(100% - 500px) !important;
+}
+
+
+
+.fc-daygrid-body-balanced {
+    width: 100% !important;
+}
+
+.fc-daygrid-body-balanced>.fc-scrollgrid-sync-table {
+    width: 100% !important;
+}
+.calendar-sidebar>span#sidebarToggler {
+    background-color: #1b5a90;
+    -webkit-box-shadow: 5px 0 18px -3px #1b5a90;
+    box-shadow: 5px 0 18px -3px #1b5a90
+}
+
+#eventListToggler {
+    background-color: #1b5a90;
+    -webkit-box-shadow: 5px 0 18px -3px #1b5a90;
+    box-shadow: 5px 0 18px -3px #1b5a90;
+}
+.event-info table td {
+    padding: 12px 8px 0px 8px;
+    text-align: center !important;
+    border-top: none !important;
+}
+
+.event-info table tr {
+    line-height: 1px;
+}
+
+.event-info table td:nth-child(2) {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.event-info table {
+    display: table;
+    width: 100%;
+}
+
+.event-info {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.calendar-events {
+    padding-right: 0px !important;
+}
+.fc-toolbar-title {
+    position: relative;
+}
+
+.fc-event {
+    padding: 3px 3px;
+}
+.fc-daygrid-day-number {
+    color: #1b5a90;
+    margin-right: 5px;
+}
+
+.fc-button {
+    background-color: #1b5a90 !important;
+}
+.fc-daygrid-body-unbalanced {
+    width: 100% !important
+}
+
+.fc-daygrid-body-unbalanced .fc-scrollgrid-sync-table,
+.fc-col-header {
+    width: 100% !important
+}
+.fc-scrollgrid-sync-table {
+    /* height: 700px !important */
+}
+
+.fc-view-harness {
+    height: 450px !important;
+    overflow: auto !important
+}
+@media only screen and (max-width: 750px) {
+    .card-con {
+        height: initial !important
+    }
+    .fc .fc-toolbar {
+        display: block !important;
+    }
+    .fc-header-toolbar .fc-toolbar-chunk:nth-child(2) h2 {
+        text-align: center;
+        margin: 20px 0px;
+    }
+    .fc-today-button {
+        margin: 12px auto !important;
+        display: block !important;
+    }
+    .fc-header-toolbar .fc-toolbar-chunk:first-child .fc-button-group {
+        padding: 0px 27px !important;
+    }
+    .fc-header-toolbar .fc-toolbar-chunk:nth-child(3) .fc-button-group {
+        padding: 0px 15px !important;
+    }
+    .only-my-app-cont {
+        /* display: block; */
+        margin: 15px 0px;
+    }
+    .fa.fa-bars {
+        color: #fff !important;
+    }
+}
+.only-my-app-cont {
+    position: relative;
+    /* top: 56px; */
+    z-index: 1;
+}
+.c-list {
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    color: #000 !important;
+    width: 90px
+}
+.c-list-in {
+    text-transform: capitalize !important;
+}
+.c-list-detail{
+    float: right;
+}
+.c-list-detail:hover{
+    text-decoration: underline !important;
+    color: #1B5A90 !important;
+}
+.fc-toolbar-title {
+    position: relative;
+}
+
+.fc-event {
+    text-align: left;
+}
+.fc-toolbar-title::selection {
+    background-color: #fff !important;
+}
+/* {
+    font-size: .875rem !important;
+    color: #000;
+    font-weight: 400;
+} */
+.main-wrapper {
+    height: 96vh;
+    min-height: 96vh;
+  }
+
+  .select2-dropdown {
+    width: 240px !important;
+    box-shadow: 1px 1px 8px #aaa;
+    top: 2px;
+  }
+
+  .swal-button--confirm {
+    background-color: #1B5A90;
+    border-color: #1B5A90;
+  }
+
+  .swal-button--confirm:hover {
+    background-color: #1B5A90 !important;
+    border-color: #1B5A90 !important;
+
+  }
+
+  .swal-button--danger {
+    background-color: #df4740;
+  }
+
+  .swal-button--danger:hover {
+    background-color: #df4740 !important;
+  }
+
+  .staffpicker .input-group-append .input-group-text>div {
+    top: -3px;
+  }
+
+  .checkbox-effect:checked+label:after {
+    transform: scale(.9);
+  }
+
+  .checkbox-effect:not(:checked)+label:after,
+  .checkbox-effect:checked+label:after {
+    top: 2
+  }
+
+  .select2-results__options li:first-child {
+    color: #333 !important;
+  }
+  .fc-daygrid-day-bottom{
+    /* margin-top: 5px !important; */
+    margin: 0px 2px !important;
+  }
+  .fc .fc-daygrid-event{
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+  }

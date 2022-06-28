@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+            rel="stylesheet"
+        />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Auto4sale</title>
+    </head>
+    <body>
+        <div id="overlayer"></div>
+
+        <span class="loader">
+            <span class="loader-inner">
+                <img
+                    src="images/loading.gif"
+                    class="img-fluid mx-auto d-block"
+                />
+            </span>
+        </span>
+
+        <div class="container-fluid header">
+            <div class="container">
+                <div class="row">
+                    <nav
+                        class="navbar navbar-expand-lg navbar-light bg-light main-navbar"
+                    >
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="index.html">
+                                <img
+                                    src="images/logo-black.svg"
+                                    class="img-fluid"
+                                />
+                            </a>
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div
+                                class="collapse navbar-collapse"
+                                id="navbarSupportedContent"
+                            >
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html"
+                                            >Cars</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="luxurycars.html"
+                                            >Luxury Cars</a
+                                        >
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link active"
+                                            href="vans.html"
+                                            >Vans</a
+                                        >
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="bikes.html"
+                                            >Bikes</a
+                                        >
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="motorhomes.html"
+                                            >Motorhomes</a
+                                        >
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="caravans.html"
+                                            >Caravans</a
+                                        >
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="trucks.html"
+                                            >Trucks</a
+                                        >
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav">
+                                    <ul class="list-inline">
+                                        <!-- <li class="list-inline-item">
+									<a href="#" class="nav-link fw-500">
+										<i class="fa-solid fa-heart"></i> Saved
+									</a>
+								</li> -->
+                                        <li class="list-inline-item dropdown">
+                                            <a
+                                                class="nav-link dropdown-toggle px-3"
+                                                href="#"
+                                                id="navbarDropdown"
+                                                role="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                                style="color: #fff !important"
+                                            >
+                                                My Account
+                                            </a>
+                                            <ul
+                                                class="dropdown-menu"
+                                                aria-labelledby="navbarDropdown"
+                                            >
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="my_vehicle.html"
+                                                        >My Vehicle</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="vehicle_sale.html"
+                                                        >Vehicles you’re
+                                                        Selling</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="subscription.html"
+                                                        >Subscription</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="pay_history.html"
+                                                        >Payment History</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="pay_method.html"
+                                                        >Payment Method</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="index.html"
+                                                        >Sign Out</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!-- <ul class="list-inline">
+								<li class="list-inline-item">
+									<a href="#" class="nav-link fw-500">Register
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="nav-link btn btn-theme px-3 text-white" href="#">
+									Sign In
+									</a>
+								</li>
+							</ul> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="slider van_detslider slider-for">
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid w-100"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid w-100"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid w-100"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid w-100"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid w-100"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid w-100"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid w-100"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid w-100"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid w-100"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid w-100"
+                                />
+                            </div>
+                        </div>
+                        <div class="slider van_navslider slider-nav">
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/advertis_right.png"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="images/car_details.png"
+                                    class="img-fluid"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="slider_btm mt-4">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1>Overview</h1>
+                                        <p>21" DT ALLOYS + FIXED SUNROOF</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex">
+                                            <div class="me-3">
+                                                <img
+                                                    src="images/miles.png"
+                                                    class="img-fluid"
+                                                />
+                                            </div>
+                                            <div>
+                                                <h2 class="text-theme">
+                                                    23,958 miles
+                                                </h2>
+                                                <p>1,490 miles below average</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="description">
+                            <h1>Description</h1>
+                            <p>
+                                On display we have a highly sought after Jaguar
+                                E-Pace D180 R-Dynamic HSE finished in Corris
+                                Grey with Mars Red Windsor Leather seats
+                                available for purchase at Rockar Jaguar Canary
+                                Wharf. This vehicle has been expertly checked
+                                and restored by our trained technicians using
+                                onlyJaguar genuine parts to meet the stringent
+                                Approved Used standards. We only select the very
+                                best vehicles to put through the programme and
+                                make available for sale. This E-Pace benefits
+                                from standout features including 21” Diamond
+                                Turned Alloys, Adaptive Dynamics, Heated
+                                Steering Wheel, Fixed Panoramic Roof, Privacy
+                                Glass & the Meridian Sound System which only
+                                enhance its desirability. All our vehicles
+                                benefit from a minimum of 12 Months Warranty
+                                with Roadside Assistance, Free Trailered Home
+                                Delivery, A Full Tank of Fuel & 14 Day Moneyback
+                                Guarantee. , Full service history, Grey, £32,990
+                            </p>
+
+                            <p>Vehicle registered: 13/12/2018</p>
+
+                            <p class="fw-bold">Extra Features</p>
+
+                            <p>
+                                These are in addition to what this car typically
+                                comes with as standard:
+                            </p>
+
+                            <p>Adaptive Dynamics</p>
+
+                            <p>
+                                21in Alloy Wheels - 5 Split-Spoke Satin Grey
+                                Diamond Turned Finish - Style 5053 <br />
+                                Heated Steering Wheel <br />
+                                Fixed Panoramic Roof <br />
+                                Privacy Glass <br />
+                                Performance Pack
+                            </p>
+                        </div>
+
+                        <div class="other_detail">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2
+                                        class="accordion-header"
+                                        id="headingOne"
+                                    >
+                                        <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne"
+                                            aria-expanded="true"
+                                            aria-controls="collapseOne"
+                                        >
+                                            Specifications
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapseOne"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample"
+                                    >
+                                        <div class="accordion-body">
+                                            <strong
+                                                >This is the first item's
+                                                accordion body.</strong
+                                            >
+                                            It is shown by default, until the
+                                            collapse plugin adds the appropriate
+                                            classes that we use to style each
+                                            element. These classes control the
+                                            overall appearance, as well as the
+                                            showing and hiding via CSS
+                                            transitions. You can modify any of
+                                            this with custom CSS or overriding
+                                            our default variables. It's also
+                                            worth noting that just about any
+                                            HTML can go within the
+                                            <code>.accordion-body</code>, though
+                                            the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2
+                                        class="accordion-header"
+                                        id="headingTwo"
+                                    >
+                                        <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo"
+                                            aria-expanded="false"
+                                            aria-controls="collapseTwo"
+                                        >
+                                            Running Costs
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapseTwo"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample"
+                                    >
+                                        <div class="accordion-body">
+                                            <strong
+                                                >This is the second item's
+                                                accordion body.</strong
+                                            >
+                                            It is hidden by default, until the
+                                            collapse plugin adds the appropriate
+                                            classes that we use to style each
+                                            element. These classes control the
+                                            overall appearance, as well as the
+                                            showing and hiding via CSS
+                                            transitions. You can modify any of
+                                            this with custom CSS or overriding
+                                            our default variables. It's also
+                                            worth noting that just about any
+                                            HTML can go within the
+                                            <code>.accordion-body</code>, though
+                                            the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2
+                                        class="accordion-header"
+                                        id="headingThree"
+                                    >
+                                        <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree"
+                                            aria-expanded="false"
+                                            aria-controls="collapseThree"
+                                        >
+                                            <span>Basic History</span>
+                                            <span
+                                                class="text-theme ms-auto order-1"
+                                                >5 Checks passed</span
+                                            >
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapseThree"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree"
+                                        data-bs-parent="#accordionExample"
+                                    >
+                                        <div class="accordion-body">
+                                            <strong
+                                                >This is the third item's
+                                                accordion body.</strong
+                                            >
+                                            It is hidden by default, until the
+                                            collapse plugin adds the appropriate
+                                            classes that we use to style each
+                                            element. These classes control the
+                                            overall appearance, as well as the
+                                            showing and hiding via CSS
+                                            transitions. You can modify any of
+                                            this with custom CSS or overriding
+                                            our default variables. It's also
+                                            worth noting that just about any
+                                            HTML can go within the
+                                            <code>.accordion-body</code>, though
+                                            the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="car_details">
+                            <h2 class="fw-bold car_name">Jaguar E-pace</h2>
+                            <h4 class="car_year">2018 (68 reg)</h4>
+                            <p class="short_des">
+                                D180 R-Dynamic HSE AWD 2.0 5dr
+                            </p>
+                            <div class="d-flex">
+                                <div>
+                                    <div class="car_price">
+                                        <h3 class="text-theme fw-bold">
+                                            £32,990
+                                        </h3>
+                                        <p class="fw-500">
+                                            Close to market average
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ms-2">
+                                    <img
+                                        src="images/price_img.png"
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="car_detailsbtn text-center mt-2">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="#" class="btn btn-theme">
+                                            <img
+                                                src="images/icons-contact.svg"
+                                                class="img-fluid"
+                                            />
+                                            <br />
+                                            Call
+                                        </a>
+                                    </li>
+
+                                    <li class="list-inline-item">
+                                        <a href="#" class="btn btn-theme">
+                                            <img
+                                                src="images/sms.svg"
+                                                class="img-fluid"
+                                            />
+                                            <br />
+                                            Message
+                                        </a>
+                                    </li>
+
+                                    <li class="list-inline-item">
+                                        <a href="#" class="btn btn-theme">
+                                            <img
+                                                src="images/contact.svg"
+                                                class="img-fluid"
+                                            />
+                                            <br />
+                                            Chat
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="car_selardetail mt-4">
+                                <h3 class="title_seller">About Seller</h3>
+
+                                <img
+                                    src="images/sellar_logo.jpg"
+                                    class="img-fluid w-100"
+                                />
+
+                                <div
+                                    class="d-flex justify-content-between mt-3"
+                                >
+                                    <div>
+                                        <h4 class="text-theme">
+                                            Rockar Jaguar
+                                        </h4>
+                                    </div>
+                                    <div class="text-center">
+                                        <ul class="list-inline mb-0">
+                                            <li class="list-inline-item">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i
+                                                    class="fa-solid fa-star-half-stroke"
+                                                ></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                4.8
+                                            </li>
+                                        </ul>
+                                        <p>108 Reviews</p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="d-flex justify-content-between mt-1"
+                                >
+                                    <div>
+                                        <h4 class="text-theme">
+                                            <a
+                                                href="#"
+                                                class="text-decoration-none"
+                                                ><img
+                                                    src="images/external-link.svg"
+                                                    class="img-fluid me-2"
+                                                />Visit Site</a
+                                            >
+                                        </h4>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-theme">
+                                            <a
+                                                href="#"
+                                                class="text-theme text-decoration-none"
+                                            >
+                                                <img
+                                                    src="images/ios-call.svg"
+                                                    class="img-fluid me-2"
+                                                />
+                                                (020)8115 4709
+                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="d-flex justify-content-between mt-3"
+                                >
+                                    <div>
+                                        <h4 class="text-theme">
+                                            <a
+                                                href="#"
+                                                class="text-decoration-none"
+                                                ><img
+                                                    src="images/map-pin.svg"
+                                                    class="img-fluid me-2"
+                                                />Location Map</a
+                                            >
+                                        </h4>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-theme">
+                                            <a
+                                                href="#"
+                                                class="text-theme text-decoration-none contact_phone"
+                                            >
+                                                <img
+                                                    src="images/directions.svg"
+                                                    class="img-fluid me-2"
+                                                />
+                                                Get Direction
+                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div class="extra_features">
+                                    <h4 class="features_title mt-3 mb-3">
+                                        Extra features
+                                    </h4>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img
+                                                src="images/suv.svg"
+                                                class="img-fluid"
+                                            />
+                                            SUV
+                                        </div>
+
+                                        <div>
+                                            <img
+                                                src="images/fuel-size.svg"
+                                                class="img-fluid"
+                                            />
+                                            2.0L
+                                        </div>
+
+                                        <div>
+                                            <img
+                                                src="images/gear.svg"
+                                                class="img-fluid"
+                                            />
+                                            Automatic
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex justify-content-between mt-4"
+                                    >
+                                        <div>
+                                            <img
+                                                src="images/door.svg"
+                                                class="img-fluid"
+                                            />
+                                            5 doors
+                                        </div>
+
+                                        <div>
+                                            <img
+                                                src="images/seat.svg"
+                                                class="img-fluid"
+                                            />
+                                            5 seats
+                                        </div>
+
+                                        <div>
+                                            <img
+                                                src="images/map.svg"
+                                                class="img-fluid"
+                                            />
+                                            Full service history
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex justify-content-between mt-4"
+                                    >
+                                        <div>
+                                            <img
+                                                src="images/gas-pump.svg"
+                                                class="img-fluid"
+                                            />
+                                            Diesel
+                                        </div>
+                                    </div>
+
+                                    <h4 class="features_title mt-4 mb-3">
+                                        Jaguar E-PACE SUV (2017 - 2020) reviews
+                                    </h4>
+
+                                    <div class="car_review">
+                                        <div class="d-flex">
+                                            <div>
+                                                <div class="from">
+                                                    By Our Experts
+                                                </div>
+                                                <ul class="list-inline mb-0">
+                                                    <li
+                                                        class="list-inline-item"
+                                                    >
+                                                        <i
+                                                            class="fa-solid fa-star"
+                                                        ></i>
+                                                    </li>
+                                                    <li
+                                                        class="list-inline-item"
+                                                    >
+                                                        <i
+                                                            class="fa-solid fa-star"
+                                                        ></i>
+                                                    </li>
+                                                    <li
+                                                        class="list-inline-item"
+                                                    >
+                                                        <i
+                                                            class="fa-solid fa-star"
+                                                        ></i>
+                                                    </li>
+                                                    <li
+                                                        class="list-inline-item"
+                                                    >
+                                                        <i
+                                                            class="fa-solid fa-star"
+                                                        ></i>
+                                                    </li>
+                                                    <li
+                                                        class="list-inline-item"
+                                                    >
+                                                        <i
+                                                            class="fa-solid fa-star-half-stroke"
+                                                        ></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div>
+                                                <a
+                                                    href="#"
+                                                    class="text-theme text-decoration-none mt-3 d-block ms-5 carreview_link"
+                                                    >Read Review</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4 related_cars">
+                    <div class="realted_carstitle">
+                        <h2>Other cars from this seller</h2>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="images/related.JPG" class="img-fluid w-100" />
+                        <h3 class="price text-theme">£1,595</h3>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="images/related.JPG" class="img-fluid w-100" />
+                        <h3 class="price text-theme">£1,595</h3>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="images/related.JPG" class="img-fluid w-100" />
+                        <h3 class="price text-theme">£1,595</h3>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="images/related.JPG" class="img-fluid w-100" />
+                        <h3 class="price text-theme">£1,595</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid grey_bg py-5 pt-3 mt-5">
+            <div class="container">
+                <div class="row pt-4 pb-4">
+                    <div class="top_content text-center">
+                        <h4 class="fw-bold">Get The Latest Updates</h4>
+                        <p>We’ll send you some updates and special offers</p>
+                    </div>
+
+                    <div class="newsletter mt-3">
+                        <div class="col-md-8 mx-auto">
+                            <div class="bg-white p-5">
+                                <form>
+                                    <div class="input-group mb-3">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Enter your email adress"
+                                        />
+                                        <span class="input-group-text">
+                                            <button
+                                                type="button"
+                                                class="btn btn-theme"
+                                            >
+                                                Get Updates
+                                            </button>
+                                        </span>
+                                    </div>
+                                </form>
+
+                                <div class="text-center mt-4">
+                                    <p class="mb-0">
+                                        Want to become member in my community?
+                                        <a
+                                            href="#"
+                                            class="text-decoration-none text-theme"
+                                            >Join with us</a
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid pt-2">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="images/logo-black.svg" class="img-fluid" />
+                        <p class="mt-3">
+                            Auto4sale is the newest way of selling a vehicle
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#"
+                                    ><i class="fa-solid fa-envelope"></i>
+                                    Hello@carentalis.mail.com</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i class="fa-solid fa-phone"></i>
+                                    022-560-342-972</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="fw-500 mb-3">Our Services</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#">Rental Car</a></li>
+                            <li><a href="#">Buy Car</a></li>
+                            <li><a href="#">Upgrade Car</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="fw-500 mb-3">Our Product</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="luxurycars.html">Luxury Car</a></li>
+                            <li><a href="#">Sport Car</a></li>
+                            <li><a href="#">Automatic Car</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="fw-500 mb-3">Social Media</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Youtube</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center copyright_text bg-white py-3">
+                <div class="col-md-12">
+                    <p class="mb-0">
+                        Copyright @Auto4sale 2022. All Right Reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        ></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            $(window).load(function () {
+                $(".loader").delay(2000).fadeOut("slow");
+                $("#overlayer").delay(2000).fadeOut("slow");
+            });
+            $(".slider-for").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+                fade: true,
+                asNavFor: ".slider-nav",
+            });
+            $(".slider-nav").slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                asNavFor: ".slider-for",
+                dots: false,
+                centerMode: true,
+                focusOnSelect: true,
+            });
+        </script>
+    </body>
+</html>

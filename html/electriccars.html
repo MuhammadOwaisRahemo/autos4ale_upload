@@ -1,0 +1,829 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<!-- Bootstrap CSS -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Auto4sale</title>
+	</head>
+<body>
+
+<div id="overlayer"></div>
+
+<span class="loader">
+	<span class="loader-inner">
+		<img src="images/loading.gif" class="img-fluid mx-auto d-block">
+	</span>
+</span>
+
+<div class="container-fluid main-banner">
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-light main-navbar">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.svg" class="img-fluid">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="index.html">Cars</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="luxurycars.html">Luxury Cars</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="vans.html">Vans</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="bikes.html">Bikes</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="motorhomes.html">Motorhomes</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="caravans.html">Caravans</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="trucks.html">Trucks</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a href="saved_search.html" class="nav-link btn btn-theme px-3">
+										<i class="fa-solid fa-heart"></i> Saved
+									</a>
+								</li>
+								<li class="list-inline-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								My Account
+								</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="my_vehicle.html">My Vehicle</a></li>
+										<li><a class="dropdown-item" href="vehicle_sale.html">Vehicles you’re Selling</a></li>
+										<li><a class="dropdown-item" href="subscription.html">Subscription</a></li>
+										<li><a class="dropdown-item" href="pay_history.html">Payment History</a></li>
+										<li><a class="dropdown-item" href="pay_method.html">Payment Method</a></li>
+										<li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+									</ul>
+								</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="banner-text text-white text-center">
+					<h1 class="fw-bold">Find best car for you in simple easy way</h1>
+					<p class="fw-normal mt-3 mb-4">
+						Auto4sale is the newest way of selling a vehicle. We have wade it simple for car sellers <br> to sell their vehicle and receive immediate cash payouts with no hassle.
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="search_tabs">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="index.html">Cars for sale</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="usedcars.html">Used Cars</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="newcars.html">New Cars</a>
+						</li>
+
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="sellcars.html">Sell My Car</a>
+						</li>
+
+						<li class="nav-item" role="presentation">
+							<a class="nav-link active" href="electriccars.html">Electric Cars</a>
+						</li>
+
+
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="leasing.html">Car Leasing</a>
+						</li>
+
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="carblogs.html">Car Blogs</a>
+						</li>
+
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="buyacar.html">Buy A Car</a>
+						</li>
+
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="value-car.html">Value Car</a>
+						</li>
+
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<!-- <div class="tab-pane" id="sale" role="tabpanel" aria-labelledby="sale-tab">
+							<form>
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md">
+											<label>Postcode</label>
+											<select class="form-control">
+												<option>WC2N 5DU</option>
+												<option>WC2N 5DU</option>
+												<option>WC2N 5DU</option>
+											</select>
+										</div>
+										<div class="col-md">
+											<label>Distance</label>
+											<select class="form-control">
+												<option>National</option>
+												<option>National</option>
+												<option>National</option>
+											</select>
+										</div>
+										<div class="col-md">
+											<label>Car Make</label>
+											<select class="form-control">
+												<option>Toyota</option>
+												<option>Toyota</option>
+												<option>Toyota</option>
+											</select>
+										</div>
+										<div class="col-md">
+											<label>Car Model</label>
+											<select class="form-control">
+												<option>Corolla Hybrid</option>
+												<option>Corolla Hybrid</option>
+												<option>Corolla Hybrid</option>
+											</select>
+										</div>
+										<div class="col-md text-center">
+											<a href="#" class="more_options d-block">More Options</a>
+											<button type="button" class="btn btn-theme fw-500 search_btn">Search Now</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div> -->
+						<div class="tab-pane fade show active" id="used" role="tabpanel" aria-labelledby="used-tab">
+							<form>
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md post_code">
+											<label>Postcode</label>
+											<img src="images/location.png" class="img-fluid"></i>
+											<select class="form-select">
+												<option>WC2N 5DU</option>
+												<option>WC2N 5DU</option>
+												<option>WC2N 5DU</option>
+											</select>
+										</div>
+										<div class="col-md">
+											<label>Distance</label>
+											<select class="form-control">
+												<option>National</option>
+												<option>National</option>
+												<option>National</option>
+											</select>
+										</div>
+										<div class="col-md">
+											<label>Car Make</label>
+											<select class="form-control">
+												<option>Toyota</option>
+												<option>Toyota</option>
+												<option>Toyota</option>
+											</select>
+										</div>
+										<div class="col-md">
+											<label>Car Model</label>
+											<select class="form-control">
+												<option>Corolla Hybrid</option>
+												<option>Corolla Hybrid</option>
+												<option>Corolla Hybrid</option>
+											</select>
+										</div>
+										<div class="col-md text-center">
+											<a href="#" class="more_options d-block">More Options</a>
+											<button type="button" class="btn btn-theme fw-500 search_btn">Search Now</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid brands_section mt-5 mb-5">
+	<div class="container">
+		<div class="row">
+			<div class="text-center top_content">
+				<h2 class="fw-bold">Popular electric car brands</h2>
+				<!-- <p>Become part of our ever growing community</p> -->
+			</div>
+			<div class="col-12 mt-4">
+				<div class="row align-items-center">
+					<div class="col-md-3">
+						<div class="text-center brands">
+							<img src="images/nissan.png" class="img-fluid mx-auto d-block">
+							<h4 class="mt-2">NISSAN</h4>
+							<p>View All 41,567 cars</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="text-center brands">
+							<img src="images/peugeot.png" class="img-fluid mx-auto d-block">
+							<h4 class="mt-2">Peugeot</h4>
+							<p>View All 41,567 cars</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="text-center brands">
+							<img src="images/audie.png" class="img-fluid mx-auto d-block">
+							<h4 class="mt-2">AUDI</h4>
+							<p>View All 41,567 cars</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="text-center brands">
+							<img src="images/tesla.png" class="img-fluid mx-auto d-block">
+							<h4 class="mt-2">Tesla</h4>
+							<p>View All 41,567 cars</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-center mt-4">
+					<a href="#" class="btn btn-theme brand_btn mb-3">See All Brands</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid py-5">
+	<div class="container">
+		<div class="advertise">
+			<div class="row g-0">
+				<div class="col-md-7">
+					<div class="right_img">
+						<img src="images/electric_car.png" class="img-fluid" />
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="madvertise_text electric_advert mt-3" style="background-color: #FAFAFA;">
+						<h2 class="fw-bold">Monthly cost comparison - how much can I save?</h2>
+						<p class="text_color">Compare the monthly cost of owning an electric car against their petrol counterparts and see how much you could save by making the switch to electric</p>
+
+						<a href="#" class="btn btn-theme py-2 px-3">Compare Costs</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid grey_bg py-5">
+	<div class="container">
+		<div class="row">
+			<div class="text-center top_content">
+				<p>Electric Car Models</p>
+				<h2 class="fw-bold">Special offers for you</h2>
+			</div>
+
+			<div class="tab-content cars_content electriccars_show mt-4" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-newcar" role="tabpanel" aria-labelledby="pills-newcar-tab">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="row">
+									<div class="cars">
+										<label class="badge bg-theme">£ 200,00</label>
+										<div class="car_img">
+											<img src="images/electric_car1.png" class="img-fluid mx-auto d-block">
+										</div>
+										<div class="car_content">
+											<h3 class="fw-500 mb-3">Volkswagen ID.3 Hatchback…</h3>
+											<p><b>Max. Speed :</b> 58.865 miles</p>
+											<p><b>Transmission :</b> Automatic</p>
+											<p><b>Exterior :</b> Cherry Red Cars</p>
+										</div>
+										<a href="#" class="btn btn-theme w-100 mt-2">Show Details</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="row">
+									<div class="cars">
+										<label class="badge bg-theme">£ 234,00</label>
+										<div class="car_img">
+											<img src="images/electric_car2.png" class="img-fluid mx-auto d-block">
+										</div>
+										<div class="car_content">
+											<h3 class="fw-500 mb-3">Audi E-Tron SUV</h3>
+											<p><b>Max. Speed :</b> 54.456 miles</p>
+											<p><b>Transmission :</b> Automatic</p>
+											<p><b>Exterior :</b> Dark Grey Cars</p>
+										</div>
+										<a href="#" class="btn btn-theme w-100 mt-2">Show Details</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="row">
+									<div class="cars">
+										<label class="badge bg-theme">£ 256,00</label>
+										<div class="car_img">
+											<img src="images/electric_car3.png" class="img-fluid mx-auto d-block">
+										</div>
+										<div class="car_content">
+											<h3 class="fw-500 mb-3">Tesla Model 3 (2022) Electric</h3>
+											<p><b>Max. Speed :</b> 56.865 miles</p>
+											<p><b>Transmission :</b> Automatic</p>
+											<p><b>Exterior :</b> Metal Gold Cars</p>
+										</div>
+										<a href="#" class="btn btn-theme w-100 mt-2">Show Details</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row results mt-4 align-items-center">
+			<div class="col-md-6">
+				<p class="mb-0">3.389 result <a href="#" class="text-theme">Need a car ? choose type car</a></p>
+			</div>
+			<div class="col-md-6 text-end">
+				<a href="#" class="btn btn-theme show_cars">Show All Cars</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid guides_section mt-5 mb-5">
+	<div class="container">
+		<div class="row">
+			<div class="text-center top_content">
+				<h2 class="fw-bold">Guides to buying a used car</h2>
+			</div>
+			<div class="col-12 mt-5">
+				<div class="row align-items-center">
+					<div class="col-md-4">
+						<div class="text-center guid">
+							<img src="images/charge.svg" class="img-fluid mx-auto d-block">
+							<h4 class="mt-2">Charging at Home</h4>
+							<p>From installing a home charge point to keeping your electric bill under control, here’s our guide to charging at home.what’s right for you.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="text-center guid">
+							<img src="images/range.svg" class="img-fluid mx-auto d-block">
+							<h4 class="mt-2">Range</h4>
+							<p>See why it’s important to check a car’s past before you buy.what’s right for you.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="text-center guid">
+							<img src="images/explained.svg" class="img-fluid mx-auto d-block">
+							<h4 class="mt-2">Electric Explained</h4>
+							<p>Your ultimate guide to electric cars from what’s under the bonnet to how they work and what it’s like to drive one.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="text-center guid">
+							<img src="images/charge_go.svg" class="img-fluid mx-auto d-block">
+							<h4 class="mt-2">Charging on the Go</h4>
+							<p>From HP to PCP, our finance guide has you covered.</p>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="text-center guid">
+							<img src="images/private.svg" class="img-fluid mx-auto d-block">
+							<h4 class="mt-2">Understanding the Jargon</h4>
+							<p>We explain all the electric acronyms and jargon in one place, so you can start shopping in confidence</p>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="text-center guid">
+							<img src="images/battery.svg" class="img-fluid mx-auto d-block">
+							<h4 class="mt-2">Battery life</h4>
+							<p>Everything you need to know about electric car batteries. How they work, how to look after them and more.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid grey_bg py-5">
+	<div class="container">
+		<div class="row align-items-center mb-4">
+			<div class="col-md-6">
+				<div class="top_content">
+					<h4 class="fw-bold">Join thousands of happy sellers</h4>
+					<p class="mb-0">Our happy customers on Trustpilot</p>
+					<img src="images/trust.png" class="img-fluid mt-1">
+				</div>
+			</div>
+			<div class="col-md-6 text-md-end mt-3 mt-md-0">
+				<a href="#" class="btn btn-theme view_alltest">Read more Trust Pilot reviews</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="testimonials">
+				<div>
+					<div class="testimonials_item">
+						<p>"Aku seneng banget belanja disini penjualnya ramah banget melayani pembeli dengan sepenuh hati untuk mendapatkan mobil sebagus ini"</p>
+						<div class="row align-items-center">
+							<div class="col-md-8">
+								<div class="row g-0">
+									<div class="col-md-4">
+										<img src="images/testimonial-1.png" class="img-fluid mx-auto d-block">
+									</div>
+									<div class="col-md-8">
+										<h5>Cindy Syahriani</h5>
+										<p>Jakarta, Indonesia</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 text-end rating">
+								<i class="fas fa-star text-theme"></i> 4.9
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="testimonials_item">
+						<p>“Bagus pisan mang aslina euy mantap lumayan buat ngajak sang kekasih pergi ke tempat romantis berdua bersamanya “</p>
+						<div class="row align-items-center">
+							<div class="col-md-8">
+								<div class="row g-0">
+									<div class="col-md-4">
+										<img src="images/testimonial-2.png" class="img-fluid mx-auto d-block">
+									</div>
+									<div class="col-md-8">
+										<h5>Ali Ahmad Naser</h5>
+										<p>Tasikmalaya, Indonesia</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 text-end rating">
+								<i class="fas fa-star text-theme"></i> 4.9
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="testimonials_item">
+						<p>“Hade mang aslina euy mantap lah lumayan banget kanggo ngopi sareng cees pas doi lagi gamau di ajak keluar buat ketemuan“</p>
+						<div class="row align-items-center">
+							<div class="col-md-8">
+								<div class="row g-0">
+									<div class="col-md-4">
+										<img src="images/testimonial-3.png" class="img-fluid mx-auto d-block">
+									</div>
+									<div class="col-md-8">
+										<h5>Andre Odang</h5>
+										<p>Sukabumi, Indonesia</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 text-end rating">
+								<i class="fas fa-star text-theme"></i> 4.9
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="testimonials_item">
+						<p>"Aku seneng banget belanja disini penjualnya ramah banget melayani pembeli dengan sepenuh hati untuk mendapatkan mobil sebagus ini"</p>
+						<div class="row align-items-center">
+							<div class="col-md-8">
+								<div class="row g-0">
+									<div class="col-md-4">
+										<img src="images/testimonial-1.png" class="img-fluid mx-auto d-block">
+									</div>
+									<div class="col-md-8">
+										<h5>Cindy Syahriani</h5>
+										<p>Jakarta, Indonesia</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 text-end rating">
+								<i class="fas fa-star text-theme"></i> 4.9
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid faq_section mt-5 mb-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 mx-auto">
+				<div class="text-center top_content">
+					<h2 class="fw-bold">Your questions answered</h2>
+					<p>Keep your vehicle description short and simple. Call out optional extras that other similar cars may not have. And don’t forget to mention full-service history if you have it.</p>
+				</div>
+
+				<div class="mt-4">
+					<div class="accordion" id="accordionExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+									Why sell my car with Auto4sale?
+								</button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p class="text_color">
+										With Auto4sale, you’re twice as likely to sell your car within a week. We also have more options than anywhere else to sell your car, so you are in control: 1. Instant Cash offer – The fastest way to sell your car. Get cash directly from Auto4sale and have the car picked up from your driveway within 48hrs 2. Part Exchange – The easy way to part exchange your old car for new one 3. Create an advert – You are in full control with your own sale. You can create and upload your advert in just three steps, and the size of our audience means you’ll get your car in front of more buyers than on any other site.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									What paperwork do I need to sell my car?
+								</button>
+							</h2>
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p class="text_color">When you sell your car, you’ll need to hand over the car’s handbook, the service logbook (plus receipts) and, if the car is over three years old, the MOT certificate. Buyers may also appreciate older MOT certificates and maintenance receipts. After you’ve sold the car, you’ll need a receipt with the date, price, registration number, make and model featured. You’ll also need your (and the buyer’s) name and address. You’ll need to tell the DVLA the car has been sold. If your car has a V5C (registration document) then fill in the bottom and send this to the DVLA. You’ll need to give the top part to the buyer alongside other paperwork.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									Where can I sell my car?
+								</button>
+							</h2>
+							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p class="text_color">
+										There are plenty of places to sell your old car. You could sell it directly to a dealership or auction house, or you can sell it online. If you’ve got the time to wait for the right buyer, selling your car privately on a site like Auto4sale can earn you more money. If you’re looking for someone to buy your car for cash, Instant Offer is a great option and one of the fastest ways to sell your car.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingFour">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									What is my car worth?
+								</button>
+							</h2>
+							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p class="text_color">
+										If you’ve sold a car before, you’ll know you can get wildly different quotes from competing sites and dealerships. Auto4sale free car valuation tool gives you the right guide price. We combine data from thousands of live adverts and dealer websites, plus values from car auctions, and ex-fleet and leasing vehicles. As our guide price represents the entire market and our data is updated daily, your quote is fair, priced to sell, and accurate. We’ll also give you a part-exchange price, an instant offer and a private sale price, so you can decide how you want to sell your car.
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingFive">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+									How much can I sell it for?
+								</button>
+							</h2>
+							<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p class="text_color">
+										A car valuation will tell you exactly how much you can sell your car for. To get the best price for your car, make sure it’s clean and in good working order. Scuffs and scratches can knock the price down, so be realistic about the car’s condition and see whether it’s worth paying for repairs. A full-service history (where you’ve had a service every year, or within its set mileage) can fetch a higher price too. Other factors can affect a car’s price. Some make models are more desirable than others, and a car’s age and mileage will also affect the final offer. Older cars with higher mileage tend to sell for less, though remember the depreciation curve of new cars means they lose most of their value in the first few years.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingSix">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+									Why sell my car with Auto4sale?
+								</button>
+							</h2>
+							<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p class="text_color">
+										With Auto4sale, you’re twice as likely to sell your car within a week. We also have more options than anywhere else to sell your car, so you are in control: 1. Instant Cash offer – The fastest way to sell your car. Get cash directly from Auto4sale and have the car picked up from your driveway within 48hrs 2. Part Exchange – The easy way to part exchange your old car for new one 3. Create an advert – You are in full control with your own sale. You can create and upload your advert in just three steps, and the size of our audience means you’ll get your car in front of more buyers than on any other site.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingSeven">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+									What paperwork do I need to sell my car?
+								</button>
+							</h2>
+							<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<p class="text_color">
+										When you sell your car, you’ll need to hand over the car’s handbook, the service logbook (plus receipts) and, if the car is over three years old, the MOT certificate. Buyers may also appreciate older MOT certificates and maintenance receipts.
+									</p>
+
+									<p class="text_color">
+										After you’ve sold the car, you’ll need a receipt with the date, price, registration number, make and model featured. You’ll also need your (and the buyer’s) name and address.
+									</p>
+
+									<p class="text_color">
+										You’ll need to tell the DVLA the car has been sold. If your car has a V5C (registration document) then fill in the bottom and send this to the DVLA. You’ll need to give the top part to the buyer alongside other paperwork.
+									</p>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid grey_bg py-5">
+	<div class="container">
+		<div class="row pt-4 pb-4">
+			<div class="top_content text-center">
+				<h4 class="fw-bold">Get The Latest Updates</h4>
+				<p>We’ll send you some updates and special offers</p>
+			</div>
+
+			<div class="newsletter mt-3">
+				<div class="col-md-8 mx-auto">
+					<div class="bg-white p-5">
+						<form>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" placeholder="Enter your email adress">
+								<span class="input-group-text">
+									<button type="button" class="btn btn-theme">Get Updates</button>
+								</span>
+							</div>
+						</form>
+
+						<div class="text-center mt-4">
+							<p class="mb-0">Want to become member in my community? <a href="#" class="text-decoration-none text-theme">Join with us</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<footer class="container-fluid pt-2">
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="images/logo-black.svg" class="img-fluid">
+				<p class="mt-3">Auto4sale is the newest way of selling a vehicle</p>
+				<ul class="list-unstyled mb-0">
+					<li>
+						<a href="#"><i class="fa-solid fa-envelope"></i> Hello@carentalis.mail.com</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-solid fa-phone"></i> 022-560-342-972</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Our Services</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="#">Rental Car</a></li>
+					<li><a href="#">Buy Car</a></li>
+					<li><a href="#">Upgrade Car</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Our Product</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="luxurycars.html">Luxury Car</a></li>
+					<li><a href="#">Sport Car</a></li>
+					<li><a href="#">Automatic Car</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Social Media</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Youtube</a></li>
+					<li><a href="#">Facebook</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="row text-center copyright_text bg-white py-3">
+		<div class="col-md-12">
+			<p class="mb-0">Copyright @Auto4sale 2022. All Right Reserved</p>
+		</div>
+	</div>
+
+</footer>
+	
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+$(window).load(function() {
+	$(".loader").delay(2000).fadeOut("slow");
+	$("#overlayer").delay(2000).fadeOut("slow");
+})
+	$(document).ready(function() {
+		$('.testimonials').slick({
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			arrows: false,
+			responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 700,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+		});
+	})
+</script>
+
+</body>
+</html>

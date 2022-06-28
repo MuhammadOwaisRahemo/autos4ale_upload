@@ -1,0 +1,30 @@
+.app-sec{
+    box-shadow: 1px 1px 5px #1b5a900f;
+}
+.app-sec thead tr{
+    background-color: #1b5a90;
+    color: #fff;
+    /* font-weight: 500; */
+}
+.app-sec thead tr th{
+    font-weight: 500;
+    padding: 10px 4px
+}
+.app-sec tbody tr td{
+    padding: 7px 3px;
+}
+.total-info tr th{
+    border: 0;
+    font-weight: 500;
+}
+.app-sec tbody tr td .custom-select{
+    height: calc(1.4em + .75rem + 2px);
+}
+#party img{
+    width: 40px;
+    position: absolute;
+    right: 71px;
+    top: -22px;
+    /* animation: shake 0.5s; */
+  /* animation-iteration-count: infinite; */
+}

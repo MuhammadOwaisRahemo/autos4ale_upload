@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<!-- Bootstrap CSS -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Auto4sale</title>
+	</head>
+<body>
+
+<div id="overlayer"></div>
+
+<span class="loader">
+	<span class="loader-inner">
+		<img src="images/loading.gif" class="img-fluid mx-auto d-block">
+	</span>
+</span>
+
+<div class="container-fluid main-banner truck_bg">
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-light main-navbar">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.svg" class="img-fluid">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="index.html">Cars</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="luxurycars.html">Luxury Cars</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="vans.html">Vans</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="bikes.html">Bikes</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="motorhomes.html">Motorhomes</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="caravans.html">Caravans</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link active" href="trucks.html">Trucks</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a href="signup.html" class="nav-link btn btn-theme px-3">Register
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="nav-link btn btn-theme px-3 text-white" href="signin.html">
+									Sign In
+									</a>
+								</li>
+								<!-- <li class="list-inline-item">
+									<a href="#" class="nav-link fw-500">
+										<i class="fa-solid fa-heart"></i> Saved
+									</a>
+								</li>
+								<li class="list-inline-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								My Account
+								</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="my_vehicle.html">My Vehicle</a></li>
+										<li><a class="dropdown-item" href="vehicle_sale.html">Vehicles you’re Selling</a></li>
+										<li><a class="dropdown-item" href="subscription.html">Subscription</a></li>
+										<li><a class="dropdown-item" href="pay_history.html">Payment History</a></li>
+										<li><a class="dropdown-item" href="pay_method.html">Payment Method</a></li>
+										<li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+									</ul>
+								</li> -->
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="banner-text text-white text-center">
+					<h1 class="fw-bold">Browse pre-owned trucks</h1>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="search_tabs">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<a class="nav-link active" href="used_truck.html">Used Truck</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="new_truck.html">New Truck</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="sell_truck.html">Sell Your Truck</a>
+						</li>
+
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="reviews_truck.html">Reviews</a>
+						</li>
+
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="used" role="tabpanel" aria-labelledby="sale-tab">
+							<form>
+								<div class="col-md-12">
+									<div class="row">
+
+										<div class="col-md post_code">
+											<label>Postcode</label>
+											<img src="images/location.png" class="img-fluid">
+											<select class="form-select">
+												<option>WC2N 5DU</option>
+												<option>WC2N 5DU</option>
+												<option>WC2N 5DU</option>
+											</select>
+										</div>
+										<div class="col-md">
+											<label>Distance</label>
+											<select class="form-control">
+												<option>National</option>
+												<option>National</option>
+												<option>National</option>
+											</select>
+										</div>
+										<div class="col-md">
+											<label>Make</label>
+											<select class="form-control">
+												<option>Toyota</option>
+												<option>Corolla Hybrid</option>
+												<option>Corolla Hybrid</option>
+											</select>
+										</div>
+										<div class="col-md">
+											<label>Model</label>
+											<select class="form-control">
+												<option>Corolla Hybrid</option>
+												<option>Corolla Hybrid</option>
+												<option>Corolla Hybrid</option>
+											</select>
+										</div>
+
+										<div class="col-md text-center">
+											<a href="#" class="more_options d-block">More Options</a>
+											<button type="submit" class="btn btn-theme fw-500 search_btn">Search Now</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid guides_section mt-5 mb-5">
+	<div class="container">
+		<div class="row">
+			<div class="text-center top_content">
+				<h2 class="fw-bold">Find a truck to suit you</h2>
+			</div>
+			<div class="col-md-10 mx-auto mt-5">
+				<div class="row align-items-center">
+					<div class="col-md-4">
+						<div class="text-center guid">
+							<h4 class="mt-3">Rigid Trucks</h4>
+							<p>Whether you’re after a tipper, curtainside truck, a box truck, or something else, we’ve got you covered.</p>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="text-center guid">
+							<h4 class="mt-3">Tractor units</h4>
+							<p>Looking for your next tractor unit? You’re in the right place.</p>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="text-center guid">
+							<h4 class="mt-3">Trailers</h4>
+							<p>Searching for a trailer to carry freight? Browse all our trailers here.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid py-5">
+	<div class="container">
+		<div class="advertise">
+			<div class="row g-0">
+				<div class="col-md-6">
+					<div class="right_img">
+						<img src="images/truck_left.png" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="madvertise_text used_truckadvert mt-3" style="background-color: #FAFAFA;">
+						<h2 class="fw-bold">Free history checks</h2>
+						<p class="text_color">Every truck has had a free basic history check. We’ll never advertise a truck that’s recorded as stolen, scrapped or written off beyond repair.</p>
+
+						<!-- <a href="#" class="btn btn-theme py-2 px-3">See Dealers Review</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid brands_section mt-5 mb-5">
+	<div class="container">
+		<div class="row">
+			<div class="text-center top_content">
+				<h2 class="fw-bold">Truck manufacturers and their models</h2>
+				<!-- <p>Become part of our ever growing community</p> -->
+			</div>
+			<div class="col-12 mt-4">
+				<div class="row align-items-center">
+					<div class="col-md-3">
+						<div class="text-center brands">
+							<img src="images/scania.png" class="pt-3 img-fluid mx-auto d-block">
+							<h4 class="mt-2">Scania</h4>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="text-center brands">
+							<img src="images/volvo.png" class="pt-3 img-fluid mx-auto d-block">
+							<h4 class="mt-2">Volvo</h4>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="text-center brands">
+							<img src="images/mercedes.png" class="pt-3 img-fluid mx-auto d-block">
+							<h4 class="mt-2">Mercedes-Benz</h4>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="text-center brands">
+							<img src="images/daf.png" class="pt-3 img-fluid mx-auto d-block">
+							<h4 class="mt-2">DAF</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-center mt-4">
+					<a href="#" class="btn btn-theme brand_btn mb-3">See All Brands</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid py-4">
+	<div class="container">
+		<div class="row">
+			<div class="text-center top_content">
+				<p>Check out the latest motorhome reviews from our team</p>
+				<h2 class="fw-bold">Top picks from Experts</h2>
+			</div>
+		</div>
+
+		<div class="row cars_reviews mt-4">
+			<div class="col-md-4">
+				<a href="#">
+					<img src="images/middel-first.png" class="img-fluid mx-auto d-block">
+				</a>
+				<h4 class="mt-3">
+					<a href="#">
+						5 Best recovery trucks (car transporters)
+					</a>
+				</h4>
+				<p class="mb-0">Here at Autotrader, we have come up with a list of 5 of the best car transporters and recovery trucks in the game. We will highlight some of their resounding features to make your choice easier. Take a look below to</p>
+				<div class="btm-text text-end mt-2">
+					<p>Expert review | 10 days ago</p>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<a href="#">
+					<img src="images/middle-review.png" class="img-fluid mx-auto d-block">
+				</a>
+				<h4 class="mt-3">
+					<a href="#" class="d-block" style="min-height: 56px;">
+						5 Best MAN Units
+					</a>
+				</h4>
+				<p class="mb-0" style="min-height: 72px">MAN is a popular manufacturer of trucks and tractor units. There are lots of MAN tractor units to choose from, so we have found 5 of the best to help you.</p>
+				<div class="btm-text text-end mt-2">
+					<p>Expert review | 10 days ago</p>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<a href="#">
+					<img src="images/last_review.png" class="img-fluid mx-auto d-block">
+				</a>
+				<h4 class="mt-3">
+					<a href="#" class="d-block" style="min-height: 56px;">
+						5 Best buses
+					</a>
+				</h4>
+				<p class="mb-0" style="min-height: 72px">According to the latest government data, there are around 32,000 buses in service on UK roads transporting more than 3 million people every day. Buses are not</p>
+				<div class="btm-text text-end mt-2">
+					<p>Expert review | 10 days ago</p>
+				</div>
+			</div>
+		</div>
+
+			<div class="text-center mt-4">
+				<a href="#" class="btn btn-theme stock_btn">See All Reviews</a>
+			</div>
+	</div>
+</div>
+
+
+<div class="container-fluid py-4">
+	<div class="container">
+		<div class="row">
+			<div class="text-center top_content">
+				<p>Check out the latest truck reviews from our team</p>
+				<h2 class="fw-bold">Need a second opinion?</h2>
+			</div>
+		</div>
+
+		<div class="row cars_reviews mt-4">
+			<div class="col-md-4">
+				<a href="#">
+					<img src="images/truck_new.png" class="img-fluid mx-auto d-block">
+				</a>
+				<h4 class="mt-3">
+					<a href="#">
+						Scania P Series review
+					</a>
+				</h4>
+				<p class="mb-0">As a multi-axle rigid the Scania P-series has no equal; lightweight, desirable and a willing workhorse.</p>
+				<div class="btm-text text-end mt-2">
+					<p>Expert review | 10 days ago</p>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<a href="#">
+					<img src="images/truck_new.png" class="img-fluid mx-auto d-block">
+				</a>
+				<h4 class="mt-3">
+					<a href="#">
+						Scania P Series review
+					</a>
+				</h4>
+				<p class="mb-0">As a multi-axle rigid the Scania P-series has no equal; lightweight, desirable and a willing workhorse.</p>
+				<div class="btm-text text-end mt-2">
+					<p>Expert review | 10 days ago</p>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<a href="#">
+					<img src="images/truck_new.png" class="img-fluid mx-auto d-block">
+				</a>
+				<h4 class="mt-3">
+					<a href="#">
+						Scania P Series review
+					</a>
+				</h4>
+				<p class="mb-0">As a multi-axle rigid the Scania P-series has no equal; lightweight, desirable and a willing workhorse.</p>
+				<div class="btm-text text-end mt-2">
+					<p>Expert review | 10 days ago</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid find_carsection py-5" style="background-image: url(images/truck_bg2.png);">
+	<div class="container">
+		<div class="find_car py-4">
+			<div class="row">
+				<div class="col-md-7 mx-auto text-center">
+					<div class="findcar_text text-white">
+						<h1>4,471</h1>
+						<h2>pre-owned trucks <br> ready and waiting</h2>
+						<a href="#" class="btn btn-theme findcar_btn">Find your truck</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="container-fluid pt-2">
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="images/logo-black.svg" class="img-fluid">
+				<p class="mt-3">Auto4sale is the newest way of selling a vehicle</p>
+				<ul class="list-unstyled mb-0">
+					<li>
+						<a href="#"><i class="fa-solid fa-envelope"></i> Hello@carentalis.mail.com</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-solid fa-phone"></i> 022-560-342-972</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Our Services</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="#">Rental Car</a></li>
+					<li><a href="#">Buy Car</a></li>
+					<li><a href="#">Upgrade Car</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Our Product</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="luxurycars.html">Luxury Car</a></li>
+					<li><a href="#">Sport Car</a></li>
+					<li><a href="#">Automatic Car</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Social Media</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Youtube</a></li>
+					<li><a href="#">Facebook</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="row text-center copyright_text bg-white py-3">
+		<div class="col-md-12">
+			<p class="mb-0">Copyright @Auto4sale 2022. All Right Reserved</p>
+		</div>
+	</div>
+
+</footer>
+	
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+$(window).load(function() {
+	$(".loader").delay(2000).fadeOut("slow");
+	$("#overlayer").delay(2000).fadeOut("slow");
+})
+</script>
+
+</body>
+</html>

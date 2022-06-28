@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<!-- Bootstrap CSS -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Auto4sale</title>
+	</head>
+<body>
+
+<div id="overlayer"></div>
+
+<span class="loader">
+	<span class="loader-inner">
+		<img src="images/loading.gif" class="img-fluid mx-auto d-block">
+	</span>
+</span>
+
+<div class="container-fluid header">
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo-black.svg" class="img-fluid">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Cars</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="luxurycars.html">Luxury Cars</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link active" href="vans.html">Vans</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="bikes.html">Bikes</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="motorhomes.html">Motorhomes</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="caravans.html">Caravans</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="trucks.html">Trucks</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav">
+							<ul class="list-inline">
+								<!-- <li class="list-inline-item">
+									<a href="#" class="nav-link fw-500">
+										<i class="fa-solid fa-heart"></i> Saved
+									</a>
+								</li> -->
+								<li class="list-inline-item dropdown">
+								<a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff !important;">
+								My Account
+								</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="my_vehicle.html">My Vehicle</a></li>
+										<li><a class="dropdown-item" href="vehicle_sale.html">Vehicles you’re Selling</a></li>
+										<li><a class="dropdown-item" href="subscription.html">Subscription</a></li>
+										<li><a class="dropdown-item" href="pay_history.html">Payment History</a></li>
+										<li><a class="dropdown-item" href="pay_method.html">Payment Method</a></li>
+										<li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+									</ul>
+								</li>
+							</ul>
+							<!-- <ul class="list-inline">
+								<li class="list-inline-item">
+									<a href="signup.html" class="nav-link fw-500">Register
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="nav-link btn btn-theme px-3 text-white" href="signin.html">
+									Sign In
+									</a>
+								</li>
+							</ul> -->
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid mt-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="car-listingleft">
+					<div class="text-center">
+						<h4 class="total_result fw-bold">445,194 vans found</h4>
+						<p class="text_color select_filter">1 filter selected</p>
+					</div>
+					<div class="saved_searchreset">
+						<div class="row">
+							<div class="col-md">
+								<a href="#" class="text-theme"><i class="fa-solid fa-heart"></i> Saved Search</a>
+							</div>
+							<div class="col-md text-end">
+								<a href="#" class="text-theme"><i class="fa-solid fa-arrows-rotate"></i> Reset</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="topbar-carlist bg-theme text-white mt-2">
+						My Saved searches <i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+
+					<input type="text" class="form-control mt-2" value="WC2N5DU">
+
+					<select class="form-control mt-3">
+						<option>Distance (100m)</option>
+						<option>Distance (200m)</option>
+					</select>
+
+					<div class="mdropdown-carlist mt-3 position-relative">
+						<label>Make</label>
+						<select class="form-control">
+							<option>AUDI</option>
+							<option>TOYOTA</option>
+							<option>HONDA</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist mt-2 position-relative">
+						<label>Model</label>
+						<select class="form-control">
+							<option>Any</option>
+							<option>TOYOTA</option>
+							<option>HONDA</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist mt-2 position-relative">
+						<label>Model Variant</label>
+						<select class="form-control">
+							<option>Any</option>
+							<option>TOYOTA</option>
+							<option>HONDA</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+
+					<div class="mdropdown-carlist mt-2 position-relative">
+						<label>Price</label>
+						<select class="form-control">
+							<option>Any to Any</option>
+							<option>500 to 1000</option>
+							<option>1000 to 2000</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+					
+					<div class="main_option d-flex text-center mt-4">
+						<input type="radio" name="select" id="option-1" checked>
+						<input type="radio" name="select" id="option-2">
+						<label for="option-1" class="option option-1">
+							<span>Year</span>
+						</label>
+						<label for="option-2" class="option option-2">
+							<span>Brand New</span>
+						</label>
+					</div>
+
+					<div class="mdropdown-carlist mt-2 position-relative">
+						<label>Min</label>
+						<select class="form-control">
+							<option>Any</option>
+							<option>500</option>
+							<option>1000</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist mt-2 position-relative">
+						<label>Max</label>
+						<select class="form-control">
+							<option>Any</option>
+							<option>500</option>
+							<option>1000</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist2 mt-2 position-relative text-start">
+						<select class="form-control">
+							<option>Milage</option>
+							<option>Distance (200m)</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist2 mt-2 position-relative text-start">
+						<select class="form-control">
+							<option>Fuel Type</option>
+							<option>Any</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist2 mt-2 position-relative text-start">
+						<select class="form-control">
+							<option>Body Type</option>
+							<option>Any</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist mt-2 position-relative">
+						<label>Engine Size</label>
+						<select class="form-control">
+							<option>Any</option>
+							<option>500</option>
+							<option>1000</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist2 mt-2 position-relative text-start">
+						<select class="form-control">
+							<option>Engine Power</option>
+							<option>Any</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist2 mt-2 position-relative text-start">
+						<select class="form-control">
+							<option>Private & Trade</option>
+							<option>Any</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist2 mt-2 position-relative text-start">
+						<select class="form-control">
+							<option>Doors</option>
+							<option>Any</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+
+					<div class="mdropdown-carlist2 mt-2 position-relative text-start">
+						<select class="form-control">
+							<option>Colors</option>
+							<option>Any</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist2 mt-2 position-relative text-start">
+						<select class="form-control">
+							<option>Seats</option>
+							<option>Any</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist2 mt-2 position-relative text-start">
+						<select class="form-control">
+							<option>Accelertaion</option>
+							<option>Any</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist2 mt-2 position-relative text-start">
+						<select class="form-control">
+							<option>Annual Tax</option>
+							<option>Any</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist2 mt-2 position-relative text-start">
+						<select class="form-control">
+							<option>Drivetrain</option>
+							<option>Any</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="mdropdown-carlist2 mt-2 position-relative text-start">
+						<select class="form-control">
+							<option>Consumption</option>
+							<option>Any</option>
+						</select>
+						<img src="images/chevron.png" class="arrow_down">
+					</div>
+
+					<div class="border btm_catcarlist mt-2 p-3 position-relative text-start">
+						<label class="d-block">CAT S/C/D/N</label>
+						<img src="images/chevron.png" class="arrow_down position-absolute">
+						<div class="inner_contentcarlist mt-3">
+
+							<label class="check_container"> Include Cat S/C/D/N
+								<input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+
+							<label class="check_container"> Exclude Cat S/C/D/N
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+
+
+							<label class="check_container"> Only show Cat S/C/D/N
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="right_carlisting">
+					<div class="top_sorting">
+						<div class="col-12">
+							<div class="row">
+								<div class="col-md-6">
+									<nav aria-label="Page navigation example">
+										<ul class="pagination align-items-center">
+											<li class="page-item">
+												<a class="page-link" href="#" aria-label="Previous">
+													<span aria-hidden="true">&laquo;</span>
+												</a>
+											</li>
+											<li class="page-item px-2">Page 1 of 894</li>
+											<li class="page-item">
+												<a class="page-link" href="#" aria-label="Next">
+													<span aria-hidden="true">&raquo;</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+								<div class="col-md-6 text-end position-relative">
+									<div class="sorting_dropdown">
+										<select class="form-control">
+											<option>Sort By</option>
+											<option>Sort By</option>
+											<option>Sort By</option>
+											<option>Sort By</option>
+										</select>
+										<img src="images/chevron.png" class="arrow_down position-absolute">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-12">
+						<div class="carlisting_item">
+							<div class="row">
+								<div class="col-md-5">
+									<img src="images/van_list.JPG" class="img-fluid">
+								</div>
+								<div class="col-md-7 pe-3 ps-md-0">
+									<h1 class="price text-theme">£20,990 +VAT</h1>
+									<h2 class="car_name">Ford Transit Custom</h2>
+									<p class="car_details">
+										2.2 TDCI 155 PS G-SPORT CREW VAN L1 SWB FULLY LOADED WITH EXTRAS FINANCE AVAILABLE TODAY (EURO
+									</p>
+									<p class="car_details">Buy & Finance Online</p>
+									<p class="car_specs">2017 (17 reg) | Saloon 39,492 miles 2.0L | 180PS | Manual | Diesel 1 owner | Part service history | ULEZ</p>
+
+									<p class="car_brand">Carzam <a href="#" class="text-theme text-decoration-none">See all 1241 cars</a></p>
+									<ul class="list-inline">
+										<li class="list-inline-item">4.4 <span class="text-theme">( 5549 reviews )</span></li>
+
+										<li class="list-inline-item">Collect from Corby <span class="text-theme">(74 miles)</span></li>
+
+										<li class="list-inline-item last_logo">
+											<img src="images/carzam_logo.png" class="img-fluid">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="carlisting_item mt-2">
+							<div class="row">
+								<div class="col-md-5">
+									<img src="images/van_list.JPG" class="img-fluid">
+								</div>
+								<div class="col-md-7 pe-3 ps-md-0">
+									<h1 class="price text-theme">£20,990 +VAT</h1>
+									<h2 class="car_name">Ford Transit Custom</h2>
+									<p class="car_details">
+										2.2 TDCI 155 PS G-SPORT CREW VAN L1 SWB FULLY LOADED WITH EXTRAS FINANCE AVAILABLE TODAY (EURO
+									</p>
+									<p class="car_details">Buy & Finance Online</p>
+									<p class="car_specs">2017 (17 reg) | Saloon 39,492 miles 2.0L | 180PS | Manual | Diesel 1 owner | Part service history | ULEZ</p>
+
+									<p class="car_brand">Carzam <a href="#" class="text-theme text-decoration-none">See all 1241 cars</a></p>
+									<ul class="list-inline">
+										<li class="list-inline-item">4.4 <span class="text-theme">( 5549 reviews )</span></li>
+
+										<li class="list-inline-item">Collect from Corby <span class="text-theme">(74 miles)</span></li>
+
+										<li class="list-inline-item last_logo">
+											<img src="images/carzam_logo.png" class="img-fluid">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="carlisting_item mt-2">
+							<div class="row">
+								<div class="col-md-5">
+									<img src="images/van_list.JPG" class="img-fluid">
+								</div>
+								<div class="col-md-7 pe-3 ps-md-0">
+									<h1 class="price text-theme">£20,990 +VAT</h1>
+									<h2 class="car_name">Ford Transit Custom</h2>
+									<p class="car_details">
+										2.2 TDCI 155 PS G-SPORT CREW VAN L1 SWB FULLY LOADED WITH EXTRAS FINANCE AVAILABLE TODAY (EURO
+									</p>
+									<p class="car_details">Buy & Finance Online</p>
+									<p class="car_specs">2017 (17 reg) | Saloon 39,492 miles 2.0L | 180PS | Manual | Diesel 1 owner | Part service history | ULEZ</p>
+
+									<p class="car_brand">Carzam <a href="#" class="text-theme text-decoration-none">See all 1241 cars</a></p>
+									<ul class="list-inline">
+										<li class="list-inline-item">4.4 <span class="text-theme">( 5549 reviews )</span></li>
+
+										<li class="list-inline-item">Collect from Corby <span class="text-theme">(74 miles)</span></li>
+
+										<li class="list-inline-item last_logo">
+											<img src="images/carzam_logo.png" class="img-fluid">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="carlisting_item mt-2">
+							<div class="row">
+								<div class="col-md-5">
+									<img src="images/van_list.JPG" class="img-fluid">
+								</div>
+								<div class="col-md-7 pe-3 ps-md-0">
+									<h1 class="price text-theme">£20,990 +VAT</h1>
+									<h2 class="car_name">Ford Transit Custom</h2>
+									<p class="car_details">
+										2.2 TDCI 155 PS G-SPORT CREW VAN L1 SWB FULLY LOADED WITH EXTRAS FINANCE AVAILABLE TODAY (EURO
+									</p>
+									<p class="car_details">Buy & Finance Online</p>
+									<p class="car_specs">2017 (17 reg) | Saloon 39,492 miles 2.0L | 180PS | Manual | Diesel 1 owner | Part service history | ULEZ</p>
+
+									<p class="car_brand">Carzam <a href="#" class="text-theme text-decoration-none">See all 1241 cars</a></p>
+									<ul class="list-inline">
+										<li class="list-inline-item">4.4 <span class="text-theme">( 5549 reviews )</span></li>
+
+										<li class="list-inline-item">Collect from Corby <span class="text-theme">(74 miles)</span></li>
+
+										<li class="list-inline-item last_logo">
+											<img src="images/carzam_logo.png" class="img-fluid">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="carlisting_item mt-2">
+							<div class="row">
+								<div class="col-md-5">
+									<img src="images/van_list.JPG" class="img-fluid">
+								</div>
+								<div class="col-md-7 pe-3 ps-md-0">
+									<h1 class="price text-theme">£20,990 +VAT</h1>
+									<h2 class="car_name">Ford Transit Custom</h2>
+									<p class="car_details">
+										2.2 TDCI 155 PS G-SPORT CREW VAN L1 SWB FULLY LOADED WITH EXTRAS FINANCE AVAILABLE TODAY (EURO
+									</p>
+									<p class="car_details">Buy & Finance Online</p>
+									<p class="car_specs">2017 (17 reg) | Saloon 39,492 miles 2.0L | 180PS | Manual | Diesel 1 owner | Part service history | ULEZ</p>
+
+									<p class="car_brand">Carzam <a href="#" class="text-theme text-decoration-none">See all 1241 cars</a></p>
+									<ul class="list-inline">
+										<li class="list-inline-item">4.4 <span class="text-theme">( 5549 reviews )</span></li>
+
+										<li class="list-inline-item">Collect from Corby <span class="text-theme">(74 miles)</span></li>
+
+										<li class="list-inline-item last_logo">
+											<img src="images/carzam_logo.png" class="img-fluid">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<nav class="mt-3">
+						<ul class="pagination justify-content-end">
+							<li class="page-item disabled">
+								<a class="page-link active" href="#">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item" aria-current="page">
+								<span class="page-link">2</span>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+
+					<div class="related">
+						<div class="col-12">
+							<h1 class="title_related">Latest brand new car deals</h1>
+							<div class="row">
+								<div class="col-md-4">
+									<a href="#">
+										<img src="images/related.JPG" class="img-fluid mx-auto d-block">
+									</a>
+									<div class="border">
+										<h4 class="mt-3">
+											<a href="#" class="text-theme">
+												£1,595
+											</a>
+										</h4>
+										<h4>Jaguar F-Type 2.0i R-Dynamic Auto Euro 6 (s/s) 2dr</h4>
+										<p class="mb-0 text_color">Coupe | Automatic | 2.0L | Petrol</p>
+										<div class="btm-text fw-500">
+											<p style="font-size: 16px;" class="text-theme">BRAND NEW - IN STOCK</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<a href="#">
+										<img src="images/related.JPG" class="img-fluid mx-auto d-block">
+									</a>
+									<div class="border">
+										<h4 class="mt-3">
+											<a href="#" class="text-theme">
+												£1,595
+											</a>
+										</h4>
+										<h4>Jaguar F-Type 2.0i R-Dynamic Auto Euro 6 (s/s) 2dr</h4>
+										<p class="mb-0 text_color">Coupe | Automatic | 2.0L | Petrol</p>
+										<div class="btm-text fw-500">
+											<p style="font-size: 16px;" class="text-theme">BRAND NEW - IN STOCK</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<a href="#">
+										<img src="images/related.JPG" class="img-fluid mx-auto d-block">
+									</a>
+									<div class="border">
+										<h4 class="mt-3">
+											<a href="#" class="text-theme">
+												£1,595
+											</a>
+										</h4>
+										<h4>Jaguar F-Type 2.0i R-Dynamic Auto Euro 6 (s/s) 2dr</h4>
+										<p class="mb-0 text_color">Coupe | Automatic | 2.0L | Petrol</p>
+										<div class="btm-text fw-500">
+											<p style="font-size: 16px;" class="text-theme">BRAND NEW - IN STOCK</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid grey_bg py-5 pt-3 mt-5">
+	<div class="container">
+		<div class="row pt-4 pb-4">
+			<div class="top_content text-center">
+				<h4 class="fw-bold">Get The Latest Updates</h4>
+				<p>We’ll send you some updates and special offers</p>
+			</div>
+
+			<div class="newsletter mt-3">
+				<div class="col-md-8 mx-auto">
+					<div class="bg-white p-5">
+						<form>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" placeholder="Enter your email adress">
+								<span class="input-group-text">
+									<button type="button" class="btn btn-theme">Get Updates</button>
+								</span>
+							</div>
+						</form>
+
+						<div class="text-center mt-4">
+							<p class="mb-0">Want to become member in my community? <a href="#" class="text-decoration-none text-theme">Join with us</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<footer class="container-fluid pt-2">
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="images/logo-black.svg" class="img-fluid">
+				<p class="mt-3">Auto4sale is the newest way of selling a vehicle</p>
+				<ul class="list-unstyled mb-0">
+					<li>
+						<a href="#"><i class="fa-solid fa-envelope"></i> Hello@carentalis.mail.com</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-solid fa-phone"></i> 022-560-342-972</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Our Services</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="#">Rental Car</a></li>
+					<li><a href="#">Buy Car</a></li>
+					<li><a href="#">Upgrade Car</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Our Product</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="luxurycars.html">Luxury Car</a></li>
+					<li><a href="#">Sport Car</a></li>
+					<li><a href="#">Automatic Car</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Social Media</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Youtube</a></li>
+					<li><a href="#">Facebook</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="row text-center copyright_text bg-white py-3">
+		<div class="col-md-12">
+			<p class="mb-0">Copyright @Auto4sale 2022. All Right Reserved</p>
+		</div>
+	</div>
+
+</footer>
+	
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+$(window).load(function() {
+	$(".loader").delay(2000).fadeOut("slow");
+	$("#overlayer").delay(2000).fadeOut("slow");
+})
+</script>
+
+</body>
+</html>

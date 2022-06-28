@@ -1,0 +1,644 @@
+@font-face {
+	font-family: 'Fabriga';
+	src: url('../fonts/Fabriga-Italic.eot');
+	src: url('../fonts/Fabriga-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Fabriga-Italic.woff2') format('woff2'),
+		url('../fonts/Fabriga-Italic.woff') format('woff'),
+		url('../fonts/Fabriga-Italic.ttf') format('truetype'),
+		url('../fonts/Fabriga-Italic.svg#Fabriga-Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Fabriga';
+	src: url('../fonts/Fabriga-Bold.eot');
+	src: url('../fonts/Fabriga-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Fabriga-Bold.woff2') format('woff2'),
+		url('../fonts/Fabriga-Bold.woff') format('woff'),
+		url('../fonts/Fabriga-Bold.ttf') format('truetype'),
+		url('../fonts/Fabriga-Bold.svg#Fabriga-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Fabriga';
+	src: url('../fonts/FabrigaMedium.eot');
+	src: url('../fonts/FabrigaMedium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FabrigaMedium.woff2') format('woff2'),
+		url('../fonts/FabrigaMedium.woff') format('woff'),
+		url('../fonts/FabrigaMedium.ttf') format('truetype'),
+		url('../fonts/FabrigaMedium.svg#FabrigaMedium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Fabriga';
+	src: url('../fonts/Fabriga.eot');
+	src: url('../fonts/Fabriga.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Fabriga.woff2') format('woff2'),
+		url('../fonts/Fabriga.woff') format('woff'),
+		url('../fonts/Fabriga.ttf') format('truetype'),
+		url('../fonts/Fabriga.svg#Fabriga') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body{font-family: Fabriga, sans-serif;;}
+/*body{font-family: 'Ubuntu', sans-serif;}*/
+.main-banner{background: url(../images/Image.png) no-repeat; padding-top: 20px; background-size: cover !important; padding-bottom: 130px;}
+.main-navbar{background-color: transparent !important;}
+.main-navbar ul li{margin: 0 5px;}
+.main-navbar ul li a{color: #FFFFFFCC !important; font-weight: 400; font-size: 16px;}
+.main-navbar ul li a.active{font-weight: 500; color: #fff;}
+.main-navbar ul li.dropdown > a{background-color: #4286F5; border-radius: 10px;}
+.main-navbar ul li.dropdown ul li a{color: #333333 !important;}
+.main-navbar ul li.dropdown ul.dropdown-menu{border-radius: 10px;}
+.banner-text{margin-top: 175px;}
+.banner-text p{font-size: 14px;line-height: 24px;}
+.search_tabs .nav-tabs li button.active,
+.search_tabs .nav-tabs li a.active{background-color: #4286F5; color: #fff; border-color: #4286F5;}
+.search_tabs .nav-tabs{border-bottom: 0;}
+.search_tabs .nav-tabs li button,
+.search_tabs .nav-tabs li a{border-radius: 0; background-color: #fff; color: #333333;font-weight: 500;font-size: 14px;}
+.search_tabs .nav-tabs li{border-left: 1px solid #000;}
+.search_tabs .nav-tabs li:first-child{border-left: 0;}
+.search_tabs .nav-tabs li:first-child button,
+.search_tabs .nav-tabs li:first-child a{position: relative;border-top-left-radius: 10px;}
+.search_tabs .nav-tabs li:first-child a:after,
+.search_tabs .nav-tabs li:first-child button:after{content: "";position: absolute;background-color: #fff;left: -1px;bottom: -9px;width: 10px;height: 10px;z-index: 0;}
+.search_tabs .nav-tabs li:first-child a.active:after,
+.search_tabs .nav-tabs li:first-child button.active:after{background-color: #4286f5;}
+.search_tabs .tab-content{background-color: #fff; padding: 15px 25px; border-radius: 10px; position: relative;}
+.search_tabs .tab-content .more_options,
+.search_tabs .tab-content label{font-weight: 500; margin-bottom: 16px;font-size: 14px;}
+.search_tabs .tab-content input,
+.search_tabs .tab-content select{padding: 11px 15px;border-radius: 10px;background: url(../images/46.png) no-repeat;background-position: 91% 16px;}
+.search_tabs .tab-content input{background-image: none;}
+.search_tabs .more_options{color: #4286F5; text-decoration: none;margin-bottom: 5px !important;margin-top: 10px; background-color: transparent;}
+.search_tabs .search_btn{padding: 10px 30px;}
+
+.choose_section{padding-top: 60px;padding-bottom: 60px;}
+.top_content h2{margin-bottom: 16px; line-height: 37px;}
+.top_content p{color: #999999;font-weight: 500;font-size: 14px;}
+.choose_section .thum_img{width:48px;height: 48px; text-align: center;padding: 10px 10px; border-radius: 50%;background-color: #EFF0F2}
+.choose_section .thum_content h4{font-size: 16px;}
+.choose_section .thum_content p{color: #999999; margin-bottom: 0;font-size: 14px;}
+.specialcar_tabs{margin-bottom: 20px;}
+.specialcar_tabs ul li{margin-right: 10px;}
+.specialcar_tabs ul li button.active{background-color: #4286F5}
+.specialcar_tabs ul li button{font-weight: 500; color: #333333; border-radius: 10px !important;font-size: 14px;}
+.specialcar_tabs ul li:last-child{margin-right: 0;}
+.cars{background-color: #FFFFFF;padding: 32px;box-shadow: 10px 32px 72px #33333308; border-right: 5px solid #FAFAFA;}
+.cars_content .col-md-12 .col-md-4:last-child .cars{border-right: 0;}
+.cars .badge{width: 111px;border-radius: 24px;height: 40px;font-size: 16px;padding-top: 11px;font-weight: 500;}
+
+.cars .car_img{min-height: 208px;}
+.cars .car_content h3{font-size: 24px;}
+.cars .car_content p{color: #999999;font-size: 14px; margin-bottom: 10px;}
+.cars .car_content p b{color: #333333;}
+.cars .btn-theme{padding-top: 13px;padding-bottom: 13px;}
+.results p{font-size: 16px; color: #333333;}
+.results p a{text-decoration: none; display: inline-block; margin-left: 12px;}
+.show_cars{padding: 12px 24px;}
+
+.madvertise_text{padding: 30px 45px 34px 46px}
+.madvertise_text h3{font-size: 32px;}
+.madvertise_text p{font-size: 16px;}
+.madvertise_text form input{border-radius: 0;}
+.madvertise_text form button.btn-theme{font-size: 16px; font-weight: 500; padding: 10px 18px;}
+
+.cars_reviews a{text-decoration: none;}
+.cars_reviews h4 a{color: #333333; font-size: 24px; font-weight: 500;}
+.cars_reviews p{color: #999999; font-size: 12px;}
+.cars_reviews .btm-text p{font-size: 16px; color: #333333; font-weight: 500;}
+
+.social_icons{border: 1px solid #F2F2F2; text-align: center; border-radius: 10px; padding: 55px 0; margin-top: 30px;}
+
+.social_icons .icons ul li{border-right: 1px solid #f2f2f2; padding: 20px 35px;}
+.social_icons .icons ul li:last-child{border-right: 0;}
+.social_icons .icons a{text-decoration: none;}
+.social_icons .icons a i{font-size: 36px;}
+.social_icons .icons a span{display: block;}
+
+.testimonials div p{color: #999999;}
+.view_alltest{padding: 10px 15px;}
+.testimonials .testimonials_item{box-shadow: 10px 32px 72px #33333308; background-color: #fff; border-radius: 10px;padding: 23px 20px; border-right: 3px solid #fafafa;}
+.testimonials .testimonials_item h5,
+.testimonials .testimonials_item p{font-size: 14px;}
+.testimonials .testimonials_item .col-md-8 p{margin-bottom: 0;font-size: 12px;}
+.testimonials .rating{font-size: 14px;}
+.newsletter input.form-control{border-right: 0;outline: none !important;box-shadow: none !important;border-color: #ced4da !important;padding: 15px 15px; height: auto;}
+.newsletter .input-group-text{background-color: transparent;border-left: 0;}
+.newsletter .input-group-text button{padding: 8px 12px;}
+
+footer{background-color: #fff;}
+footer p{font-size: 14px;}
+footer ul li{margin-bottom: 10px;}
+footer ul li:last-child{margin-bottom: 0;}
+footer ul li a{color: #333333;font-size: 14px; text-decoration: none; font-weight: 400;}
+footer ul li a i{margin-right: 10px;}
+footer h5{font-size: 16px; margin-top: 10px;}
+footer .copyright_text{color: #999999; font-size: 14px;}
+
+/*User Cars Page*/
+#used .post_code{position: relative;}
+#used .post_code img{position: absolute;left: 25px;bottom: 17px;}
+#used .post_code select{padding-left: 35px;}
+.guides_section .guid,
+.brands_section .brands{padding: 55px 25px; border: 1px solid #F2F2F2; cursor: pointer; border-radius: 10px; height: 211px; max-height: 211px; }
+.guides_section .guid:hover,
+.brands_section .brands:hover{border-color: #4286F5;}
+.guides_section .guid:hover p,
+.brands_section .brands:hover p{color: #333333;}
+.guides_section .guid h4,
+.brands_section h4{font-size: 16px; font-weight: 500;color: #333333;}
+.guides_section .guid p,
+.brands_section .brands p{font-size: 14px;margin-bottom: 0;color: #999999;}
+.brands_section .brand_btn{padding: 9px 17px;font-size: 14px;}
+.guides_section .top_content h2{font-size: 32px;}
+.guides_section .guid{margin-bottom: 18px; padding: 30px 25px;}
+.find_carsection{background: url(../images/findcar_bg.png) no-repeat; background-attachment: fixed; background-size: cover;}
+.find_carsection .findcar_btn{padding: 10px 18px}
+.find_carsection .findcar_text h1{font-size: 85px;}
+.find_carsection .findcar_text h2{font-size: 35px;margin-bottom: 20px;}
+.testimonials_usedcar .testimonials_item{margin: 0 15px; padding: 23px 10px;}
+
+/*New Cars Page*/
+.newbest_choice{padding-left: 20px;}
+.newbest_choice h1{font-size: 32px; line-height: 37px; color: #2D4059;}
+.newbest_choice p{font-size: 16px;}
+.newbest_choice h2{font-size: 48px; line-height: 55px;}
+.newbest_choice .counter p{font-size: 18px; line-height: 24px; font-weight: 400;}
+
+/*Sell Cars Page */
+.header{background-color: #fff;}
+.header .main-navbar ul li a{color: #3C3E41 !important;}
+.header .main-navbar ul li a.btn-theme{color: #fff!important;}
+.main-bannerbg{background: url(../images/banner-img.png) no-repeat;background-position: top center;background-size: cover;}
+.main-bannerbg ul{margin-top: 20px; margin-bottom: 0;}
+.main-bannerbg ul li{margin: 0 15px;}
+.main-bannerbg ul li a{color: #fff; text-decoration: none; font-size: 14px; font-weight: 500;}
+.main-bannerbg h1{font-size: 40px; margin-bottom: 25px; margin-top: 31px;}
+.bg_lightwhite{background-color: #F8F8F8}
+.sell_offeer{padding: 45px 20px 20px 36px; border-radius: 10px;}
+.advert_pricebtn{font-size: 14px;padding: 12px 23px;font-weight: 500;}
+.newadvertise_text{padding: 60px 25px 0 30px;}
+.sell_guid .guid{height: 250px;max-height: 250px;}
+.faq_section h2 button{font-size: 16px; font-weight: 400;}
+.faq_section .accordion-item{margin-bottom: 21px; border: 1px solid rgba(0,0,0,.125);}
+.faq_section .accordion-item h2 button{padding: 20px 40px 20px 30px; color: #333333;font-weight: 400; font-size: 16px;background-color: transparent !important; box-shadow: none !important;}
+
+.faq_section .accordion-body p{font-size: 14px;}
+.faq_section .accordion-button::after{background-image:  url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")}
+
+
+/* Electric Cars */
+.electric_advert{padding-top: 95px; padding-bottom: 95px; padding-left: 40px;}
+.electriccars_show .cars{padding: 32px 20px;}
+
+/* Leasing */
+.leasing_video{position: relative;}
+.leasing_video i{font-size: 65px;color: #fff;position: absolute;left: 43%;top: 45%;}
+
+/*Car Blog*/
+.blog_item a{color: #04141C; text-decoration: none;}
+.blog_item h4{min-height: 60px;font-size: 20px; font-weight: 700;}
+.blog_item p{font-size: 16px;font-weight: 400; margin-bottom: 12px;}
+.car_blogadvert{padding: 30px 125px 34px 46px;}
+
+/*Buy a Car*/
+.main_option{display: block;margin-bottom: 20px; margin-top: 10px;}
+.main_option .option{background: #fff;margin: 0;cursor: pointer;padding:  10px 32px;border: 2px solid lightgrey;transition: all 0.3s ease;display: inline;}
+.option-1{border-radius: 4px 0px 0px 4px}
+.option-2{border-radius: 0px 4px 4px 0px}
+.main_option input[type="radio"]{display: none;}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{border-color: #0069d9;background: #0069d9;}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{color: #fff;}
+
+#year:checked:checked ~ .option-1,
+#brand:checked:checked ~ .option-2{border-color: #0069d9;background: #0069d9;}
+#year:checked:checked ~ .option-1 span,
+#brand:checked:checked ~ .option-2 span{color: #fff;}
+
+
+/*Blogs*/
+.blog_view h1{font-size: 32px;}
+.blog_view p{color: #333333;font-size: 16px; font-weight: 400;}
+.blog_view h3{font-size: 20px; color: #333333;}
+
+/*Value Car*/
+.value_searchbtn{margin-top: 39px; padding: 11px 20px !important;}
+.btm_faq .grey_bg{padding: 37px 28px 20px 29px;}
+.btm_faq .grey_bg h4{font-size: 22px; font-weight: 400;}
+.btm_faq .grey_bg p{font-size: 15px;}
+.btm_faq .grey_bg .accordion .accordion-item{border: 0;}
+.btm_faq .grey_bg .accordion .accordion-item button{background-color: #fff !important; padding-right: 32px !important;border: 0 !important}
+
+
+/* Luxury Cars */
+.luxurycars_banner{background: url(../images/luxurycar_bg.png) no-repeat; background-size: cover; padding-bottom: 200px;}
+
+
+/*Van Page*/
+.van_bg{background: url(../images/van-bg.png) no-repeat;}
+
+
+/*Sell Van*/
+.sellvan_advert{padding: 95px 95px 95px 40px;}
+
+
+/*Van Blog*/
+.van_blogadvert h2{font-size: 35px;}
+.van_blogadvert p{font-size: 18px;padding-right: 40px;}
+
+
+.review_title h2{font-size: 24px;}
+.review_title ul li{color: #4286F5; font-size: 16px; margin-right: 0px !important;}
+.review_title ul li p{font-size: 16px; font-weight: 500;}
+.review_title h4{font-size: 16px; color: #333333;}
+.review_title h4 ul{display: inline-block;}
+.review_title h4 ul{margin-left: 30px;}
+
+.left_review p,
+.right_review h5,
+.left_review h5{font-weight: 500; font-size: 16px;}
+
+.right_review ul li{color: #4286F5; font-size: 16px; margin-right: 0px !important;}
+.right_listview li{margin-bottom: 8px;display: block;color: #999999 !important; font-weight: 500;}
+.right_listview li span{color: #333333}
+.reviews_section .under_line{width: 300px; background-color: #c7c8c9; height: 1px; display: block;}
+
+/*Van Finance*/
+.van_finance{position: relative;}
+.vanfinance_content{position: absolute;top: 15%;left: 5%;right: auto;}
+.van_finance h1{font-size: 85px;}
+.van_finance h2{font-size: 35px;}
+
+
+/*Electric Van*/
+.electric_advertvan{padding: 49px 130px 35px 46px;}
+
+
+/*Category Page*/
+.category_section{margin-top: 50px;}
+.category_section h1{font-size: 32px;}
+.category_section p{font-size: 14px;}
+.category_section h2{font-size: 20px;}
+.cat h5{font-size: 16px;}
+.cat h5 img{margin-right: 10px;}
+
+
+/*Bike*/
+.bike_bg{background: url(../images/bike_bg.png) no-repeat; padding-bottom: 240px;}
+
+.car-listingleft{border: 1px solid #F2F2F2; border-radius: 5px; padding: 25px 15px;}
+.car-listingleft h4{color: #333333;font-size: 20px;}
+.car-listingleft .select_filter{font-size: 14px;}
+.car-listingleft .saved_searchreset a{font-weight: 500; text-decoration: none;}
+.car-listingleft .topbar-carlist{padding: 10px 12px; border-radius: 4px;}
+.car-listingleft .topbar-carlist i{float: right;font-size: 17px; margin-top: 3px;}
+.car-listingleft input,
+.car-listingleft select{color: #333333; font-weight: 400; border-radius: 5px; border-color: #F2F2F2;font-size: 15px;}
+.mdropdown-carlist label{position: absolute; left: 12px; top: 6px;font-size: 15px;}
+.mdropdown-carlist select{text-align: right; color: #4286F5; padding-right: 35px;}
+.mdropdown-carlist2 img,
+.mdropdown-carlist img{right: 10px; position: absolute; top: 12px;}
+.car-listingleft .main_option label{flex: 45%; padding: 6px 32px;font-size: 15px;}
+.btm_catcarlist img{right: 10px; top: 15px;}
+.btm_catcarlist{border-radius: 5px; border-color: #F2F2F2 !important;}
+.btm_catcarlist .inner_contentcarlist{padding-left: 15px; padding-right: 15px;}
+
+.btm_catcarlist .inner_contentcarlist label{margin-bottom: 10px;border: 1px solid #F2F2F2; padding: 5px 10px; border-radius: 5px;}
+.btm_catcarlist .check_container{display: block;position: relative;margin-bottom: 12px;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.btm_catcarlist .check_container input{position: absolute;opacity: 0;cursor: pointer;height: 0;width: 0;}
+.checkmark{position: absolute;top: 10px;right: 10px;height: 15px;width: 15px;border: 1px solid #4286F5;}
+.checkmark:after{content: "";position: absolute;display: none;}
+.checkboxes input:checked ~ .checkmark:after,
+.btm_catcarlist input:checked ~ .checkmark:after{display: block;}
+.checkboxes .checkmark:after,
+.btm_catcarlist .checkmark:after{left: 4px;top: 0px;width: 5px;height: 10px;border: solid #4286F5;border-width: 0 2px 2px 0;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);}
+.top_sorting ul li.page-item a{padding: 0;border: 0;}
+.top_sorting .sorting_dropdown{width: 150px; float: right;}
+.top_sorting .sorting_dropdown select{border: 0;}
+.top_sorting .sorting_dropdown img{top: 10px; right: 25px;}
+
+.carlisting_item{border: 1px solid #F2F2F2; border-radius: 5px; padding-right: 15px;}
+.carlisting_item h1.price{font-size: 20px;margin-top: 10px;}
+.carlisting_item h2.car_name{font-size: 16px;color: #333333;}
+.carlisting_item p.car_details{font-size: 14px;color: #333333; margin-bottom: 5px;}
+.carlisting_item p.car_brand{margin-bottom: 0; font-size: 14px;}
+.carlisting_item p.car_brand,
+.carlisting_item p.car_specs{font-weight: 500; color: #333333;font-size: 14px;}
+.carlisting_item p.car_specs{margin-bottom: 10px;}
+.carlisting_item ul{position: relative;margin-bottom: 0;}
+.carlisting_item ul li{font-weight: 500; color: #333333;font-size: 14px;}
+.carlisting_item ul li.last_logo{position: absolute; right: 0; top: -30px;}
+.related h4{font-size: 16px; font-weight: 500;}
+.related h4 a{font-size: 20px; font-weight: bold; text-decoration: none;}
+.related p{font-size: 16px;}
+.related .border{padding: 0 15px;}
+.title_related{font-size: 22px;color: #333333;}
+.slick-arrow{font-family: "Font Awesome 6 Free";font-weight: 900;background-color: #4286F5 !important;width: 20px;height: 80%;}
+.van_navslider .slick-next{right: 0;}
+.van_navslider .slick-next:before{font-family: "Font Awesome 6 Free";content: "\f054";}
+.van_navslider .slick-prev{left: 0; z-index: 1;}
+.van_navslider .slick-prev:before{font-family: "Font Awesome 6 Free";content: "\f053";}
+.slider_btm h1{font-size: 26px; color: #333333;margin-bottom: 10px;}
+.description p,
+.slider_btm p{color: #333333;font-size: 16px;}
+.slider_btm h2{font-size: 20px; margin-bottom: 4px;}
+.description h1{font-size: 26px; margin-top: 32px;}
+.other_detail .accordion-button::after{right: 20px;position: absolute;transform: rotate(-90deg)}
+.other_detail .accordion-item h2 button span.text-theme{margin-right: 40px;}
+.other_detail .accordion-body,
+.other_detail .accordion-body p{font-size: 16px;}
+.other_detail .accordion .accordion-item{margin-bottom: 15px;border-radius: 4px; border: 1px solid #F2F2F2}
+.other_detail .accordion .accordion-item h2 button{padding: 14px 20px;}
+.car_details h2{font-size: 26px;margin-bottom: 8px;}
+.car_details .car_year{font-size: 20px; color: #333333;font-size: 20px;}
+.car_details .short_des{font-size: 16px;color: #333333;}
+.car_details .car_price{margin-bottom: 10px;}
+.car_detailsbtn ul li{width: 32%; margin-right: 2px !important;}
+.car_detailsbtn ul li:last-child{margin-right: 0;}
+.car_detailsbtn ul li a{width: 100%; border-radius: 12px; background-color: #4286F5 !important; color: #fff !important;}
+.car_selardetail .title_seller{font-size: 18px; font-weight: bold;} 
+.car_selardetail h4{font-size: 18px; font-weight: 400;}
+.car_selardetail p{font-size: 14px;}
+.car_selardetail ul li{margin-right: 2px !important;}
+.car_selardetail ul li i{color: #4286F5;}
+.contact_phone{font-size: 18px;}
+.extra_features .features_title{font-size: 20px; font-weight: bold; color: #333333;}
+.extra_features .d-flex{color: #333333; font-weight: 500;}
+.extra_features .d-flex img{margin-right: 5px;}
+.car_review .from{font-weight: 400;font-size: 14px;}
+.car_review .carreview_link{font-size: 14px; font-weight: 400;}
+.realted_carstitle h2{font-size: 22px; color: #333333;}
+.related_cars h3{font-size: 20px; padding-left: 15px; margin-top: 10px;}
+.search_title{font-size: 20px; color: #333333;}
+.search_title_section p{font-size: 14px;}
+.search_catbox{border: 1px solid #F2F2F2; border-radius: 5px; padding: 24px;}
+.search_catbox h3{font-size: 16px; color: #333333;}
+.search_catbox a{text-decoration: none; margin-bottom: 38px; display: block;}
+.search_catbox .search_boxtoptitle{font-size: 16px;color: #333333;position: absolute;top: -10px;background-color: #fff;width: 120px;padding: 0 10px;}
+.search_catbox .but_with label{width: 49%; padding: 7px 30px;}
+.keywords_field{height: 40px;}
+.keywords_btn{font-size: 14px; padding: 8px 15px;}
+.checkboxes{position: relative;padding-left: 25px;font-size: 14px;}
+.checkboxes input{position: absolute;opacity: 0;cursor: pointer;height: 0;width: 0;}
+.checkboxes .checkmark{left: 0;right: auto;top: 0px;border-radius: 5px;width: 18px;height: 18px;}
+.checkboxes .checkmark:after{top: 1px;left: 4px;width: 7px;height: 11px;}
+.dealer_name h4{font-size: 26px; font-weight: bold;}
+.customer_review h1{font-size: 32px;}
+.customer_review ul li{margin-right: 2px !important;}
+.customer_review ul li{font-size: 20px;}
+.review_progress{font-size: 16px;}
+.review_progress .progress{border-radius: 9px;}
+.review_progress .progress .progress-bar{background-color: #4286F5;}
+.review_progress .end_text{color: #333333}
+.review_progress .progress{background-color: #DDEAFF;}
+.user_review h3{font-size: 20px; color: #333333; margin-bottom: 0;}
+.user_review .ago_days{font-size: 12px}
+.user_review .author_name{font-size: 16px; font-weight: 500; margin-bottom: 8px;color: #333333;}
+.user_review .review{font-size: 16px;color: #333333;}
+.reviews .top_sorting{position: relative; top: 35px;}
+
+.dealers-listingtitle h1{font-size: 32px;}
+.dealers-listingtitle p{font-size: 14px}
+.dealer_poplocations h4{font-size: 20px;}
+.dealer_poplocations li a{text-decoration: none; font-size: 16px; line-height: 26px;}
+
+.dealerlisting_item{border: 1px solid #F2F2F2; border-radius: 5px;margin-bottom: 20px;}
+.dealer_header{background-color: #F2F2F2; padding: 13px 24px;}
+.dealer_header h3{font-size: 14px; margin-bottom: 7px;}
+.dealer_header ul li{margin-right: 0px !important;}
+.dealer_header .text-end ul li{margin-right: 10px !important; color: #333333; font-size: 14px;}
+.dealer_header .text-end ul li:last-child{margin-right: 0 !important;}
+.dealer_header .address_det{font-size: 14px; color: #333333;}
+.dealer_detail .address_det{font-size: 14px; margin-bottom: 0;}
+.dealer_detail{font-size: 14px; padding: 40px 18px 5px 18px;}
+
+.social_login a{display: block;text-decoration: none;}
+.social_login .box{text-align: center; width: 100%; border: 1px solid #F2F2F2; border-radius: 10px;padding: 30px 15px;}
+.social_login .box i{font-size: 40px; margin-bottom: 5px;}
+.social_login .box p{font-size: 14px;margin-bottom: 0;}
+.or_column{padding-top: 20px;padding-bottom: 20px;}
+.or_social{width:100%; text-align:center; border-bottom: 1px solid #F2F2F2; line-height:0.1em; margin:10px 0 20px;font-size: 25px;}
+.logintop_content h1{font-size: 32px; color: #333333;}
+.logintop_content p{font-size: 14px;}
+
+
+.login_frm input{border: 1px solid #F2F2F2; font-size: 14px; padding: 15px 15px; border-radius: 10px;}
+.login_frm .input-group:hover input,
+.login_frm .input-group:focus input,
+.login_frm input:hover,
+.login_frm input:focus{border-color: #4689F2;}
+.login_frm .input-group .input-group-text{background-color: transparent; position: absolute; right: 0; z-index: 3;}
+.login_frm .input-group .input-group-text{border-color: #F2F2F2; border: 0;}
+.login_frm .input-group input{border-radius: 10px !important;}
+.login_frm a{color: #333333;}
+.or_social span{background-color: #fff; padding: 5px 15px;}
+
+
+.user_sidebar{border: 1px solid #F2F2F2; border-radius: 7px; padding: 25px 23px;}
+.user_sidebar ul li a{color: #333333; text-decoration: none;font-size: 16px; font-weight: 400;}
+.user_sidebar ul li a.active{color: #4286F5}
+.user_sidebar ul li{margin-bottom: 20px;}
+.user_sidebar ul li:last-child{margin-bottom: 0;}
+.user_form input{border: 1px solid #F2F2F2; border-radius: 10px; height: 58px; padding: 10px 20px;}
+.user_form button{font-size: 14px; font-weight: 500; padding: 12px 40px;}
+.subscription h4{font-size: 18px; font-weight: 500;}
+.subscription p{font-size: 14px}
+.subscription .check_container{font-size: 16px;}
+.person_detform input{padding: 7px 12px;}
+.person_detform input[type="checkbox"]{padding: 8px;}
+.person_detform i.fa-pen-to-square{font-size: 23px;}
+.url_group{position: relative;}
+.url_group .input-group-text{background-color: transparent; border: 0; position: absolute; right: 0; top: 0px; padding: 0;z-index: 4;}
+.url_group input{padding-right: 40px;}
+.upload_file{position: relative;}
+.upload_file input[type="file"]{width: 0; height: 0;position: absolute; right: 0;opacity: 0;}
+.upload_file label{background-color: #F2F2F2; border-radius: 5px; width: 100%; padding: 8px 15px;}
+.person_detform input{border: 1px solid #F2F2F2; border-radius: 5px;}
+.vehicle_saleboxes h5{font-size: 14px;margin-bottom: 10px;}
+.vehicle_saleboxes h1.numbers{font-size: 40px;margin-bottom: 0;}
+.vehicle_saleboxes h1.numbers i{color: #4286F5; margin-right: 10px;}
+.vehicleadd_btm p{font-size: 12px;}
+.vehicleadd_btm a,
+.vehicleadd_btm button{font-size: 14px;padding: 12px 25px !important; margin-top: 5px;}
+
+.vehicle_saleaddbox h4,
+.vehicle_saleaddbox p{font-size: 16px;}
+.top_steps .content{font-weight: 500;}
+.top_steps .active{color: #333333; font-weight: 700;}
+.top_steps .active.text-theme{color: #4286F5}
+.top_steps .border_line{width: 100px;background-color: #999999;height: 1px;margin: 0 15px;}
+.top_steps .border_line.active{background-color: #4689F2;}
+
+.price_field .input-group-text{padding: 0;border: 0}
+.price_field .input-group-text button{padding: 3px 15px;position: absolute;color: #fff; border-radius: 0;}
+.price_field .input-group-text button.plus{top: 0;background-color: #4286f5;border-top-right-radius: 10px;}
+.price_field .input-group-text button.minus{bottom: 0; color: #4286f5;border-bottom-right-radius: 10px; border-color: #F2F2F2; border-top: 0;}
+
+.edit textarea{min-height: 185px; font-size: 14px; padding-right: 60px; resize: none; border-radius: 5px;}
+.edit i{font-size: 20px; position: absolute; top: 10px; right: 15px; font-style: normal;}
+
+
+.vehicleadd_price input{border-color: #F2F2F2}
+.vehicleadd_details input{height: 40px; border-color: #F2F2F2;}
+.vehicleadd_details .active{border-color: #4286f5;}
+.vehicleadd_details .active textarea,
+.vehicleadd_details .active input{border-color: #4286f5;}
+.vehicleadd_details .active i{color: #4286f5;;}
+
+.img_box{position: relative;}
+.img_box .remove_icon{position: absolute; bottom: 0; right: 0; display: block; background-color: #fff; padding: 5px; border-radius: 5px 0px 5px 0px;}
+
+.more_img{border-radius: 5px;border: 1px dashed #4286F5;width: 100%;text-align: center;height: 100%;font-size: 25px;color: #4286F5;align-items: center;position: relative;}
+.more_img i{top: 50%;left: 50%;transform: translate(-50%, -50%);position: absolute;}
+.vehicleadd_contact input{height: 40px;}
+
+.ad_package{border: 1px solid #F2F2F2; border-radius: 5px; transition: 0.5s;}
+.ad_package .ad_packageheader{background-color: #4286F5; padding: 15px 0; border-radius: 5px 5px 0px 0px; border-bottom: 1px solid #F2F2F2;}
+.ad_package .ad_packageheader h2{font-size: 30px;}
+/*.ad_package .ad_packagecontent{padding-top: 25px;}*/
+.ad_package .ad_packagecontent{padding: 25px 12px;}
+.ad_package .ad_packagecontent h2{font-size: 30px}
+.ad_package .ad_packagecontent h4{font-size: 15px;}
+.ad_package .ad_packagecontent ul li{font-size: 15px; margin-bottom: 10px; position: relative; padding-left: 30px;}
+.ad_package .ad_packagecontent ul li:before{content: "";background: url(../images/checked.png) no-repeat;width: 20px;height: 20px;background-size: 100% 100%;position: absolute;left: 0;top: 0;}
+.ad_package:hover .ad_packagecontent{background-color: #4286F5; color: #fff;}
+.ad_package:hover .ad_packagecontent ul li:before{background-image: url(../images/checked-activr.png);}
+.ad_package.active{background-color: #4286F5; color: #fff;}
+.ad_package.active .ad_packagecontent ul li:before{background-image: url(../images/checked-activr.png);}
+.paybox{border: 1px solid #F2F2F2; border-radius: 5px; padding: 10px 0px;}
+.paybox table,
+.paybox table tr,
+.paybox table th,
+.paybox table td,
+.paybox table thead,
+.paybox .table>:not(:first-child),
+.paybox table tbody{border: 0;}
+
+.paybox table{margin-bottom: 0;}
+.paybox table td,
+.paybox table th{padding: 8px 25px;}
+.paybox table th{font-size: 16px;font-weight: 500;}
+.paybox table td{font-size: 14px;font-weight: 400;}
+
+.cards img{width: 44%;right: 10px;top: 7px;}
+
+.user_form .mdropdown-carlist2 select{padding: 15px 15px;margin-bottom: 20px;}
+.user_form .mdropdown-carlist2 img{right: 25px;top: 18px;}
+
+.car_box{border:  1px solid #F2F2F2; border-radius: 10px; padding: 10px 12px;position: relative;}
+/*.car_rightcontent{position: relative;}*/
+.car_rightcontent{padding-top: 20px;}
+.car_rightcontent .delete_icon{position: absolute; top: 0; right: 0; background-color: #4286F5; padding: 1px 8px 6px 8px; border-bottom-left-radius: 10px; border-top-right-radius: 10px;}
+.btn-addanother{border: 1px dashed #4286F5; color: #4286F5; border-radius: 10px; padding: 10px 20px; transition: 0.5s;}
+.btn-addanother:hover{background-color: #4286F5; color: #fff;}
+
+.saved_list li a{display: block; text-decoration: none; color: #999999; padding: 5px 15px; font-weight: 400;}
+.saved_list li.active a{border-bottom: 1px solid #4286F5; color: #333333; font-weight: 500;}
+.btm_compare{background-color: #F2F2F2; padding-right: 15px;}
+.saved_carbox{border-bottom-right-radius: 0;border-bottom-left-radius: 0; padding-top: 15px;}
+
+.compare_carbox{border: 1px solid #F2F2F2; border-radius: 10px;}
+.compare_carbox .compare_content{padding: 10px 10px;}
+.compare_carbox .compare_content .row{margin-bottom: 5px;}
+.compare_carbox .compare_content .car_selardetail ul li i{font-size: 14px;}
+
+.motohomes_bg{background: url(../images/moto-bg.png) no-repeat; padding-bottom: 175px;}
+.motohomes_advert{padding: 125px 60px 95px 70px;}
+.advert_mill{padding: 80px 70px 70px 60px;}
+.caravans_bg{background: url(../images/caravans_bg.png) no-repeat; padding-bottom: 175px;}
+.canavans_advert{padding: 125px 60px 125px 70px;}
+.newbest_choicenew{padding-right: 105px;padding-top: 20px;}
+
+.truck_bg{background-image: url(../images/truck_bg.png)}
+.stock_btn{padding: 10px 15px;}
+.det_btn{padding: 12px 10px;}
+.used_truckadvert{padding: 163px 75px 135px 76px;}
+.new_truckadvert{padding: 120px 70px 120px 76px;}
+.inner_side_barbtn{padding: 3px 10px !important;font-size: 15px;}
+
+/*Media Query*/
+@media(max-width: 768px){
+	.navbar-light .navbar-toggler{border-color: #fff}
+	.navbar-collapse{position: absolute;top: 60px;width: 90%;background: rgba(0,0,0, 0.5);padding-left: 20px; z-index: 9; padding-bottom: 20px;padding-right: 20px;}
+	.main-navbar .navbar-nav ul li{display: block!important;}
+	.main-navbar .navbar-nav ul li.dropdown a.nav-link{display: inline-block;padding: 10px 15px;}
+	/*.search_tabs ul li{width: 50%;}
+	.search_tabs ul li a,
+	.search_tabs ul li button{display: block; width: 100%; text-align: left;}
+	.search_tabs .nav-tabs li:first-child a:after, .search_tabs .nav-tabs li:first-child button:after,
+	.search_tabs .nav-tabs li:first-child a.active:after, .search_tabs .nav-tabs li:first-child button.active:after{background-color: transparent;}
+	.search_tabs .tab-content{border-radius: 0px 0px 10px 10px;}
+	.search_tabs .nav-tabs li{border-left: 0;}*/
+	.header .navbar .navbar-toggler{border-color: #000;}
+	.header .main-navbar ul li a{color: #fff !important;}
+	.main-banner{overflow: hidden;}
+	body{overflow-x: hidden;}
+}
+
+.responsive_dropdown .dropdown-toggle::after{content: "";border: 0;background: url(../images/arrow_bottom.svg) no-repeat;background-position: center right;position: absolute;width: 20px;height: 20px;right: 20px;}
+.responsive_dropdown .dropdown-toggle:hover:after{background-image: url(../images/chevron.png);}
+.responsive_navbar{margin-bottom: 0;}
+.responsive_navbar li{margin-bottom: 10px;}
+.responsive_navbar li a{text-decoration: none;color: #323232;background-color: #BFD1F3;border-radius: 4px;padding: 5px 10px;font-size: 14px; transition: 0.5s;font-weight: 500}
+.responsive_navbar li a:hover,
+.responsive_navbar li a.active{color: #fff;background-color: #4286F5;}
+
+.responsive_btmnav{margin-top: 5px;padding-right: 15px;}
+.responsive_btmnav li{margin-bottom: 10px;}
+.responsive_btmnav li a{text-decoration: none; font-weight: 500; font-size: 14px;color: #333333}
+.responsive_btmnav li a.active{color: #4286F5;}
+.sidebar_mobile{box-shadow: 5px 5px 5px #343131; position: absolute;width: 100%;background-color: #fff;z-index: 99;border-bottom: 1px solid #eee;top: 0;right: -1500px; transition: 0.5s;}
+/*.side_barbtn{}*/
+
+/*PRELOADING------------ */
+#overlayer {
+	width:100%;
+	height:100%;  
+	position:fixed;
+	z-index:1;
+	background:rgba(255, 255, 255, 0.8);
+}
+.loader {
+	display: inline-block;
+	position: fixed;
+	z-index:3;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.loader-inner {
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+}
+
+/* Helper Classes */
+.fw-500{font-weight: 500 !important;}
+.text-theme{color: #4286F5 !important;}
+.bg-theme{background-color: #4286F5;}
+.btn-theme{background-color: #4286F5; color: #fff; border-radius: 10px; border: 1px solid transparent; transition: 0.5s;-webkit-transition: 0.5s; -ms-transition: 0.5s; -o-transition: 0.5s;}
+.btn-theme:hover{background-color: transparent; color: #4286F5; border-color: #4286F5;}
+.grey_bg{background-color: #FAFAFA;}
+.box_shadow{box-shadow: 10px 32px 72px #33333308;}
+.text_color{color: #999999;}
+.black_colored{color: #333333;}
+.fs-12{font-size: 12px;}
+.fs-14{font-size: 14px !important;}
+.fs-16{font-size: 16px !important;}
+.fw-18{font-size: 18px !important;}
+.fs-20{font-size: 20px !important;}

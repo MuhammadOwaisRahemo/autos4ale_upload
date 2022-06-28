@@ -1,0 +1,1 @@
+[26-May-2022 13:18:39 America/New_York] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.2.34. in /home/mycolfrz/public_html/demo/auto4sale/vendor/composer/platform_check.php on line 24

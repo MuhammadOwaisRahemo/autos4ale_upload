@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<!-- Bootstrap CSS -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Auto4sale</title>
+	</head>
+<body>
+
+<div id="overlayer"></div>
+
+<span class="loader">
+	<span class="loader-inner">
+		<img src="images/loading.gif" class="img-fluid mx-auto d-block">
+	</span>
+</span>
+
+<div class="container-fluid header">
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo-black.svg" class="img-fluid">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" href="index.html">Cars</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="luxurycars.html">Luxury Cars</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="vans.html">Vans</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="bikes.html">Bikes</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="motorhomes.html">Motorhomes</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="caravans.html">Caravans</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="trucks.html">Trucks</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav">
+							<ul class="list-inline">
+								<!-- <li class="list-inline-item">
+									<a href="saved_search.html" class="nav-link fw-500">
+										<i class="fa-solid fa-heart"></i> Saved
+									</a>
+								</li> -->
+								<li class="list-inline-item dropdown">
+								<a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff !important;">
+								My Account
+								</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="my_vehicle.html">My Vehicle</a></li>
+										<li><a class="dropdown-item" href="vehicle_sale.html">Vehicles you’re Selling</a></li>
+										<li><a class="dropdown-item" href="subscription.html">Subscription</a></li>
+										<li><a class="dropdown-item" href="pay_history.html">Payment History</a></li>
+										<li><a class="dropdown-item" href="pay_method.html">Payment Method</a></li>
+										<li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+									</ul>
+								</li>
+							</ul>
+							<!-- <ul class="list-inline">
+								<li class="list-inline-item">
+									<a href="signup.html" class="nav-link fw-500">Register
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="nav-link btn btn-theme px-3 text-white" href="signin.html">
+									Sign In
+									</a>
+								</li>
+							</ul> -->
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid mt-5 mb-5 pb-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="user_sidebar">
+					<ul class="list-unstyled mb-0">
+						<li><a href="my_vehicle.html" class="active">My Vehicle <i class="fa-solid fa-arrow-right"></i></a></li>
+						<li><a href="vehicle_sale.html">Vehicles you’re Selling</a></li>
+						<li><a href="subscription.html">Subscription</a></li>
+						<li><a href="personal_detail.html">Personal details</a></li>
+						<li><a href="pay_history.html">Payment History</a></li>
+						<li><a href="pay_method.html">Payment Method</a></li>
+						<li><a href="index.html">Sign Out</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="logintop_content">
+					<h1 class="fw-bold"><i class="fa-solid fa-arrow-left"></i> Sorry, we couldn’t find your car</h1>
+				</div>
+
+				<div class="row">
+					<div class="col-md-10">
+
+						<form>
+							<div class="user_form mt-4">
+								<div class="mdropdown-carlist2 position-relative text-start">
+									<select class="form-control fs-14">
+										<option>Please Select Car Make</option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+									<img src="images/chevron.png" class="arrow_down">
+								</div>
+
+								<div class="mdropdown-carlist2 position-relative text-start">
+									<select class="form-control fs-14">
+										<option>Please Select Car Model</option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+									<img src="images/chevron.png" class="arrow_down">
+								</div>
+
+								<div class="mdropdown-carlist2 position-relative text-start">
+									<select class="form-control fs-14">
+										<option>Please Select Car Variant</option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+									<img src="images/chevron.png" class="arrow_down">
+								</div>
+
+
+								<div class="mdropdown-carlist2 position-relative text-start">
+									<select class="form-control fs-14">
+										<option>Please Select Derivative</option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+									<img src="images/chevron.png" class="arrow_down">
+								</div>
+
+
+								<div class="mdropdown-carlist2 position-relative text-start">
+									<select class="form-control fs-14">
+										<option>Please Select Registration Date</option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+									<img src="images/chevron.png" class="arrow_down">
+								</div>
+
+								<div class="text-end">
+									<button type="submit" class="btn btn-theme">This is my car</button>
+								</div>
+
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<footer class="container-fluid pt-2">
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="images/logo-black.svg" class="img-fluid">
+				<p class="mt-3">Auto4sale is the newest way of selling a vehicle</p>
+				<ul class="list-unstyled mb-0">
+					<li>
+						<a href="#"><i class="fa-solid fa-envelope"></i> Hello@carentalis.mail.com</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-solid fa-phone"></i> 022-560-342-972</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Our Services</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="#">Rental Car</a></li>
+					<li><a href="#">Buy Car</a></li>
+					<li><a href="#">Upgrade Car</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Our Product</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="luxurycars.html">Luxury Car</a></li>
+					<li><a href="#">Sport Car</a></li>
+					<li><a href="#">Automatic Car</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h5 class="fw-500 mb-3">Social Media</h5>
+				<ul class="list-unstyled mb-0">
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Youtube</a></li>
+					<li><a href="#">Facebook</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="row text-center copyright_text bg-white py-3">
+		<div class="col-md-12">
+			<p class="mb-0">Copyright @Auto4sale 2022. All Right Reserved</p>
+		</div>
+	</div>
+
+</footer>
+	
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+$(window).load(function() {
+	$(".loader").delay(2000).fadeOut("slow");
+	$("#overlayer").delay(2000).fadeOut("slow");
+})
+</script>
+
+</body>
+</html>
