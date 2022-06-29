@@ -26,12 +26,6 @@ class FilterController extends Controller
             $ads = CarAd::with('car_images', 'car_details')->where(['status' => '1', 'condition_type' => $condition_type, 'fuel' => 'other']);
         }
 
-        $fuel_type = $ads->groupBy('fuel_type')->get();
-        $color = $ads->groupBy('color')->get();
-        $engine_size = $ads->groupBy('engine_size')->orderBy('id', 'desc')->get();
-        $min_year = $ads->groupBy('register_date')->orderBy('id', 'desc')->get();
-        $max_year = $ads->groupBy('register_date')->latest()->get();
-
         if (isset($request->make)) {
             $brand_id = Brand::where('name', $request->make)->first()->id;
             $ads = $ads->where('brand_id', $brand_id);
@@ -76,15 +70,22 @@ class FilterController extends Controller
             }
         }
 
+        $fuel_type = $ads->groupBy('fuel_type')->get();
+        $color = $ads->groupBy('color')->get();
+        $engine_size = $ads->groupBy('engine_size')->orderBy('id', 'desc')->get();
+        $min_year = $ads->groupBy('register_date')->orderBy('id', 'desc')->get();
+        $max_year = $ads->groupBy('register_date')->latest()->get();
+
         if (isset($category_id)) {
             $make = CarAd::with('brand')->where(['category_id' => $category_id, 'status' => '1', 'condition_type' => $condition_type, 'fuel' => 'other']);
+            $new_ads = CarAd::with('car_images', 'car_details')->where(['category_id' => $category_id, 'status' => '1', 'condition_type' => 'new', 'fuel' => 'other']);
         }else{
             $make = CarAd::with('brand')->where(['status' => '1', 'condition_type' => $condition_type, 'fuel' => 'other']);
+            $new_ads = CarAd::with('car_images', 'car_details')->where(['status' => '1', 'condition_type' => 'new', 'fuel' => 'other']);
         }
 
         $data = [
             'title' => 'Search Data',
-            'all_ads_by_trade' => hashids_encode(1),
             'ads' => $ads->paginate(10),
             'make' => $make->groupBy('brand_id')->get(),
             'model' => @$model_filter,
@@ -94,7 +95,8 @@ class FilterController extends Controller
             'min_year' => $min_year,
             'max_year' => $max_year,
             'request' => @$request,
-            'category_id' => @$category_id
+            'category_id' => @$category_id,
+            'new_ads' => $new_ads,
         ];
 
         return view('front.pages.search_filters')->with($data);
@@ -116,12 +118,6 @@ class FilterController extends Controller
         }else{
             $ads = CarAd::with('car_images', 'car_details')->where(['user_id' => $user_trade_details->id,'status' => '1', 'condition_type' => $condition_type, 'fuel' => 'other']);
         }
-
-
-        $color = $ads->groupBy('color')->get();
-        $min_year = $ads->groupBy('register_date')->orderBy('id', 'desc')->get();
-        $max_year = $ads->groupBy('register_date')->latest()->get();
-
 
         if (isset($request->make)) {
             $brand_id = Brand::where('name', $request->make)->first()->id;
@@ -156,11 +152,21 @@ class FilterController extends Controller
             }
         }
 
+        $color = $ads->groupBy('color')->get();
+        $min_year = $ads->groupBy('register_date')->orderBy('id', 'desc')->get();
+        $max_year = $ads->groupBy('register_date')->latest()->get();
+
+        if (isset($category_id)) {
+            $make = CarAd::with('brand')->where(['user_id' => $user_trade_details->id,'category_id' => $category_id->id, 'status' => '1', 'condition_type' => $condition_type, 'fuel' => 'other']);
+        }else{
+            $make = CarAd::with('brand')->where(['status' => '1', 'condition_type' => $condition_type, 'fuel' => 'other']);
+        }
+
         $data = [
             'title' => 'Ad Dealer',
             'trade_details' => $user_trade_details,
             'ads' => $ads->paginate(10),
-            'make' => CarAd::with('brand')->where(['user_id' => $user_trade_details->id,'category_id' => $category_id, 'status' => '1', 'condition_type' => $condition_type, 'fuel' => 'other'])->groupBy('brand_id')->get(),
+            'make' => $make->groupBy('brand_id')->get(),
             'model' => @$model_filter,
             'color' => $color,
             'min_year' => $min_year,
@@ -169,5 +175,10 @@ class FilterController extends Controller
         ];
 
         return view('front.pages.ads_dealer')->with($data);
+    }
+
+    public function save_search(Request $request)
+    {
+        dd($request);
     }
 }

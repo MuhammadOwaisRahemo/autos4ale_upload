@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="{{ asset('front_assets') }}/css/all.min.css">
-    
+
     <!-- Bootstrap CSS -->
     <link href="{{ asset('front_assets') }}/css/slick.min.css" rel="stylesheet">
     <link href="{{ asset('front_assets') }}/css/slick-theme.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     <title>Auto4sale {{ isset($title) ? ' | ' . $title : null }}</title>
 </head>
 
-<body>
+<body class="body">
     <div id="overlayer"></div>
 
     <span class="loader" id='preloader'>
@@ -56,7 +56,7 @@
     </div>
 
     <!-- mobile navbar -->
-    @include('front.partial.front_mobile_nav')
+    {{-- @include('front.partial.front_mobile_nav') --}}
     <!-- end mobile navbar -->
 
     <div class="container-fluid mt-5 mb-5 pb-5">

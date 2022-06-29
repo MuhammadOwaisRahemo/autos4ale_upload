@@ -665,33 +665,50 @@ class CarAdController extends Controller
             return redirect(route('front.vehacle_sale_summary'));
         }
 
-        Stripe\Stripe::setApiKey(config('app.STRIPE_SECRET'));
-        $charged = Stripe\Charge::create([
-            "amount" => $request->amount * 100,
-            "currency" => "gbp",
-            "source" => $request->stripeToken,
-            "description" => "This payment is car ad."
-        ]);
-
-        if ($charged->status == 'succeeded') {
+        if ($request->amount == "FREE") {
             $payment = new CarAdPayment();
             $payment->user_id = $user_id;
             $payment->car_ad_id = $ad_id;
             $payment->package_id = null;
-            $payment->transaction_id = $charged->id;
-            $payment->amount = $charged->amount;
-            $payment->currency = $charged->currency;
+            $payment->amount = $request->amount == "FREE" ? 0 : '';
             $payment->transaction_date = date('Y-m-d');
-            $payment->data = json_encode($charged);
             $payment->save();
 
             $car_ad->status = "1";
             $car_ad->save();
 
             return redirect(route('front.car_payment_success', $payment->hashid));
-        } else {
-            dd('Something Went Wronge.');
+        }else{
+            Stripe\Stripe::setApiKey(config('app.STRIPE_SECRET'));
+            $charged = Stripe\Charge::create([
+                "amount" => $request->amount * 100,
+                "currency" => "gbp",
+                "source" => $request->stripeToken,
+                "description" => "This payment is car ad."
+            ]);
+
+            if ($charged->status == 'succeeded') {
+                $payment = new CarAdPayment();
+                $payment->user_id = $user_id;
+                $payment->car_ad_id = $ad_id;
+                $payment->package_id = null;
+                $payment->transaction_id = $charged->id;
+                $payment->amount = $charged->amount;
+                $payment->currency = $charged->currency;
+                $payment->transaction_date = date('Y-m-d');
+                $payment->data = json_encode($charged);
+                $payment->save();
+
+                $car_ad->status = "1";
+                $car_ad->save();
+
+                return redirect(route('front.car_payment_success', $payment->hashid));
+            } else {
+                dd('Something Went Wronge.');
+            }
         }
+
+
 
         return back();
     }

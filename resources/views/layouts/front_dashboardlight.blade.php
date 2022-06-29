@@ -119,6 +119,7 @@
 
     @yield('banner-section')
 
+    <!-- mobile navbar -->
     @include('front.partial.front_mobile_nav')
     <!-- end mobile navbar -->
 

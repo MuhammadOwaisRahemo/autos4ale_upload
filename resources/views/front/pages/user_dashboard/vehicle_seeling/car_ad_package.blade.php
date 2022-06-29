@@ -39,7 +39,7 @@
 
                             <div class="ad_packagecontent">
                                 <div class="text-center">
-                                    <h2> {{$val['price']}}£ </h2>
+                                    <h2> {{$val['price'] == "FREE" ? $val['price'] : $val['price']."£"}} </h2>
                                     <p>{{isset($val['desc']) ? $val['desc'] : ''}}</p>
                                     {{-- <p class="photos">Uptown 100 Photos</p> --}}
                                 </div>

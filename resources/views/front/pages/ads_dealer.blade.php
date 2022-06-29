@@ -225,7 +225,7 @@
                         <div class="main_option d-flex text-center mt-4">
                             <input type="radio" name="search_by_year"
                                 {{ $request->search_by == 'year' ? 'checked' : '' }} value="year" class="search_year"
-                                id="option-1">
+                                id="option-1" checked>
                             <input type="radio" name="search_by_year" value="brand_new" class="search_year"
                                 {{ $request->search_by == 'brand_new' ? 'checked' : '' }} id="option-2">
                             <label for="option-1" class="option option-1">
@@ -416,8 +416,8 @@
                                                 <p class="car_specs">
                                                     {{ $value->register_date . ' | ' . $value->fuel_type }}</p>
 
-                                                <p class="car_brand">Carzam <a href="#"
-                                                        class="text-theme text-decoration-none">See all 1241 cars</a></p>
+                                                <p class="car_brand"><a href="#"
+                                                        class="text-theme text-decoration-none">{{$trade_details->trade_name}} See all {{count($ads)}} cars</a></p>
                                                 <ul class="list-inline">
                                                     {{-- <li class="list-inline-item">4.4 <span class="text-theme">( 5549
                                                             reviews )</span></li>
@@ -426,8 +426,8 @@
                                                             class="text-theme">(74 miles)</span></li> --}}
 
                                                     <li class="list-inline-item last_logo">
-                                                        <img src="{{ asset('front_assets') }}/images/carzam_logo.png"
-                                                            class="img-fluid">
+                                                        <img src="{{ check_file($trade_details->trade_logo) }}"
+                                                        class="img-fluid" style="width: 113px; height:32px;">
                                                     </li>
                                                 </ul>
                                             </a>
@@ -910,7 +910,7 @@
                 route += '&search_by=' + search_year;
             }
 
-            if (search_year == "year") {
+            if (search_year == "year" && min_year_text || max_year_text) {
                 route += '&search_by=' + search_year;
                 if (min_year_text) {
                     route += '&from=' + min_year_text;

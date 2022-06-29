@@ -18,11 +18,11 @@ class CreateCarAdPaymentsTable extends Migration
             $table->bigInteger('user_id');
             $table->bigInteger('car_ad_id');
             $table->bigInteger('package_id')->nullable();
-            $table->text('transaction_id');
-            $table->string('amount');
-            $table->string('currency');
+            $table->text('transaction_id')->nullable();
+            $table->string('amount')->nullable();
+            $table->string('currency')->nullable();
             $table->date('transaction_date');
-            $table->longText('data');
+            $table->longText('data')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

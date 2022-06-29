@@ -13,21 +13,40 @@
                             <h4 class="total_result fw-bold">{{ count($ads) }} cars for sale</h4>
                             <p class="text_color select_filter">1 filter selected</p>
                         </div>
+
                         <div class="saved_searchreset">
                             <div class="row">
+                                @if(isset(auth('user')->user()->id) && isset($category_id))
                                 <div class="col-md">
-                                    <a href="#" class="text-theme"><i class="fa-solid fa-heart"></i> Saved Search</a>
+                                    <a href="#" class="text-theme" data-toggle="modal" data-target="#saveSearch"><i
+                                            class="fa-solid fa-heart"></i> Saved Search </a>
                                 </div>
+                                @endif
+
                                 <div class="col-md text-end">
                                     <a type="button" id="rest_search" class="text-theme"><i
                                             class="fa-solid fa-arrows-rotate"></i> Reset</a>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="topbar-carlist bg-theme text-white mt-2">
+                        @if(isset(auth('user')->user()->id) && isset($category_id))
+                        <div class="topbar-carlist bg-theme text-white mt-2" data-toggle="modal"
+                            data-target="#mySavedSearch" style="cursor: pointer">
                             My Saved searches <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
+
+                        <!-- save search Modal start -->
+                        <x-modals.save_search categoryId="{{ @$category_id }}" userId="{{auth('user')->user()->id}}" request="{{ @$request }}"></x-modals.save_search>
+                        <!-- save search Modal end -->
+
+                        <!-- my saved search Modal start -->
+                        <x-modals.my_saved_search userId="{{auth('user')->user()->id}}"></x-modals.my_saved_search>
+                        <!-- my saved search Modal end -->
+                        @endif
+
+
+
+
 
                         <input type="text" class="form-control mt-2" value="WC2N5DU">
                         <select class="form-control mt-3">
@@ -119,7 +138,7 @@
                         <div class="main_option d-flex text-center mt-4">
                             <input type="radio" name="search_by_year"
                                 {{ $request->search_by == 'year' ? 'checked' : '' }} value="year" class="search_year"
-                                id="option-1">
+                                id="option-1" checked>
                             <input type="radio" name="search_by_year" value="brand_new" class="search_year"
                                 {{ $request->search_by == 'brand_new' ? 'checked' : '' }} id="option-2">
                             <label for="option-1" class="option option-1">
@@ -301,7 +320,7 @@
                             <img src="{{ asset('front_assets') }}/images/chevron.png" class="arrow_down">
                         </div>
 
-                        <div class="border btm_catcarlist mt-2 p-3 position-relative text-start">
+                        {{-- <div class="border btm_catcarlist mt-2 p-3 position-relative text-start">
                             <label class="d-block">CAT S/C/D/N</label>
                             <img src="{{ asset('front_assets') }}/images/chevron.png"
                                 class="arrow_down position-absolute">
@@ -319,7 +338,7 @@
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
-                        </div><br>
+                        </div><br> --}}
 
                         <div class=" mdropdown-carlist2 mt-2 position-relative text-start"
                             style="float: right !important;">
@@ -354,31 +373,31 @@
                                 </div>
                             </div>
                         </div>
-                        @foreach ($ads as $value)
+                        @forelse ($ads as $value)
                             <div class="col-12">
                                 <div class="carlisting_item mt-4">
                                     <div class="row">
-
-                                            <div class="col-md-5">
-                                                <div class="row">
-                                                    <div class="col-md-8 p-0">
-                                                        <!-- <div class="row"> -->
-                                                        <img src="{{ check_file($value->car_images[0]->image) }}"
-                                                            class="img-fluid" style="border: 1px solid #fff">
-                                                        <!-- </div> -->
-                                                    </div>
-                                                    <div class="col-md-4 p-0">
-                                                        <!-- <div class="row"> -->
-                                                        <img src="{{ check_file($value->car_images[1]->image) }}"
-                                                            class="img-fluid" style="border: 1px solid #fff">
-                                                        <img src="{{ check_file($value->car_images[2]->image) }}"
-                                                            class="img-fluid" style="border: 1px solid #fff">
-                                                        <!-- </div> -->
-                                                    </div>
+                                        <div class="col-md-5">
+                                            <div class="row">
+                                                <div class="col-md-8 p-0">
+                                                    <!-- <div class="row"> -->
+                                                    <img src="{{ check_file($value->car_images[0]->image) }}"
+                                                        class="img-fluid" style="border: 1px solid #fff">
+                                                    <!-- </div> -->
+                                                </div>
+                                                <div class="col-md-4 p-0">
+                                                    <!-- <div class="row"> -->
+                                                    <img src="{{ check_file($value->car_images[1]->image) }}"
+                                                        class="img-fluid" style="border: 1px solid #fff">
+                                                    <img src="{{ check_file($value->car_images[2]->image) }}"
+                                                        class="img-fluid" style="border: 1px solid #fff">
+                                                    <!-- </div> -->
                                                 </div>
                                             </div>
-                                            <div class="col-md-7 pe-3">
-                                                <a href="{{ route('front.cars.single_car_details', $value->hashid) }}"style="text-decoration: none">
+                                        </div>
+                                        <div class="col-md-7 pe-3">
+                                            <a
+                                                href="{{ route('front.cars.single_car_details', $value->hashid) }}"style="text-decoration: none">
                                                 <h1 class="price text-theme">£{{ $value->car_details->price }}</h1>
                                                 <h2 class="car_name">{{ $value->car_details->ad_title }}</h2>
                                                 <p class="car_details">
@@ -389,28 +408,35 @@
                                                     {{ $value->register_date . ' | ' . $value->fuel_type }}
                                                 </p>
                                                 @if ($value->user->trade_seller == 1)
-                                                    <p class="car_brand">Carzam <a
-                                                        href="{{ route('front.ads_dealer_data',[ 'id' => $all_ads_by_trade, 'channel' => @$request->category]) }}"
-                                                        class="text-theme text-decoration-none">See all {{ isset($category_id) ? $value->user->ads->where('category_id',$category_id)->where('status',1)->count() : $value->user->ads->count() }} cars</a></p>
+                                                    <p class="car_brand"><a
+                                                            href="{{ route('front.ads_dealer_data', ['id' => $value->user->hashid, 'channel' => @$request->category]) }}"
+                                                            class="text-theme text-decoration-none">{{ $value->user->trade_name }}
+                                                            See all
+                                                            {{ isset($category_id)? $value->user->ads->where('category_id', $category_id)->where('status', 1)->count(): $value->user->ads->count() }}
+                                                            cars</a></p>
                                                     <ul class="list-inline">
                                                 @endif
 
-                                                    {{-- <li class="list-inline-item">4.4 <span class="text-theme">( 5549
+                                                {{-- <li class="list-inline-item">4.4 <span class="text-theme">( 5549
                                                             reviews )</span></li>
                                                     <li class="list-inline-item">Collect from Corby <span
                                                             class="text-theme">(74 miles)</span></li> --}}
-                                                    <li class="list-inline-item last_logo">
-                                                        <img src="{{ asset('front_assets') }}/images/carzam_logo.png"
-                                                            class="img-fluid">
-                                                    </li>
+                                                <li class="list-inline-item last_logo">
+                                                    <img src="{{ check_file($value->user->trade_logo) }}"
+                                                        class="img-fluid" style="width: 113px; height:32px;">
+                                                </li>
                                                 </ul>
-                                        </a>
+                                            </a>
 
-                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        @endforeach
+                        @empty
+                            <center>
+                                <h4>Ads Not Found</h4>
+                            </center>
+                        @endforelse
 
                         {{-- <div class="carlisting_item mt-2">
 							<div class="row">
@@ -444,58 +470,51 @@
                             <div class="col-12">
                                 <h1 class="title_related">Latest brand new car deals</h1>
                                 <div class="row">
+                                    @forelse ($new_ads as $value)
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <img src="{{ check_file($value->car_images[0]->image) }}"
+                                                    class="img-fluid mx-auto d-block"
+                                                    style="width: 269px;
+                                            height: 203;">
+                                            </a>
+                                            <div class="border">
+                                                <h4 class="mt-3">
+                                                    <a href="#" class="text-theme">
+                                                        £{{ $value->car_details->price }}
+                                                    </a>
+                                                </h4>
+                                                <h4>{{ $value->car_details->ad_title }}</h4>
+                                                <p class="mb-0 text_color">{{ $value->color . '|' . $value->fuel_type }}
+                                                </p>
+                                                <div class="btm-text fw-500">
+                                                    <p style="font-size: 16px;" class="text-theme">BRAND NEW - IN STOCK
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @empty
+                                        <center>
+                                            <h4>New Ads Not Available</h4>
+                                        </center>
+                                    @endforelse
                                     {{-- <div class="col-md-4">
-									<a href="#">
-										<img src="{{ asset('front_assets') }}/images/related.JPG" class="img-fluid mx-auto d-block">
-									</a>
-									<div class="border">
-										<h4 class="mt-3">
-											<a href="#" class="text-theme">
-												£1,595
-											</a>
-										</h4>
-										<h4>Jaguar F-Type 2.0i R-Dynamic Auto Euro 6 (s/s) 2dr</h4>
-										<p class="mb-0 text_color">Coupe | Automatic | 2.0L | Petrol</p>
-										<div class="btm-text fw-500">
-											<p style="font-size: 16px;" class="text-theme">BRAND NEW - IN STOCK</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<a href="#">
-										<img src="{{ asset('front_assets') }}/images/related.JPG" class="img-fluid mx-auto d-block">
-									</a>
-									<div class="border">
-										<h4 class="mt-3">
-											<a href="#" class="text-theme">
-												£1,595
-											</a>
-										</h4>
-										<h4>Jaguar F-Type 2.0i R-Dynamic Auto Euro 6 (s/s) 2dr</h4>
-										<p class="mb-0 text_color">Coupe | Automatic | 2.0L | Petrol</p>
-										<div class="btm-text fw-500">
-											<p style="font-size: 16px;" class="text-theme">BRAND NEW - IN STOCK</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-md-4">
-									<a href="#">
-										<img src="{{ asset('front_assets') }}/images/related.JPG" class="img-fluid mx-auto d-block">
-									</a>
-									<div class="border">
-										<h4 class="mt-3">
-											<a href="#" class="text-theme">
-												£1,595
-											</a>
-										</h4>
-										<h4>Jaguar F-Type 2.0i R-Dynamic Auto Euro 6 (s/s) 2dr</h4>
-										<p class="mb-0 text_color">Coupe | Automatic | 2.0L | Petrol</p>
-										<div class="btm-text fw-500">
-											<p style="font-size: 16px;" class="text-theme">BRAND NEW - IN STOCK</p>
-										</div>
-									</div>
-								</div> --}}
+                                            <a href="#">
+                                                <img src="{{ asset('front_assets') }}/images/related.JPG" class="img-fluid mx-auto d-block">
+                                            </a>
+                                            <div class="border">
+                                                <h4 class="mt-3">
+                                                    <a href="#" class="text-theme">
+                                                        £1,595
+                                                    </a>
+                                                </h4>
+                                                <h4>Jaguar F-Type 2.0i R-Dynamic Auto Euro 6 (s/s) 2dr</h4>
+                                                <p class="mb-0 text_color">Coupe | Automatic | 2.0L | Petrol</p>
+                                                <div class="btm-text fw-500">
+                                                    <p style="font-size: 16px;" class="text-theme">BRAND NEW - IN STOCK</p>
+                                                </div>
+                                            </div>
+                                        </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -598,7 +617,7 @@
                 route += '&search_by=' + search_year;
             }
 
-            if (search_year == "year") {
+            if (search_year == "year" && min_year_text || max_year_text) {
                 route += '&search_by=' + search_year;
                 if (min_year_text) {
                     route += '&from=' + min_year_text;

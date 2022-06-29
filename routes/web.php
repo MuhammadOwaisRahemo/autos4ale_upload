@@ -120,6 +120,7 @@ Route::namespace('Frontend')->as('front.')->group(function () {
     Route::get('/search-filter','FilterController@search_filter')->name('search_filter');
     Route::get('/search-filter-data','FilterController@search_filter_data')->name('search_filter_data');
 
+
     // ads dealer routes
     Route::get('/dealers','FilterController@ads_dealer_data')->name('ads_dealer_data');
 
@@ -183,6 +184,9 @@ Route::middleware(['userAuth', 'is_active', 'verified'])->as('front.')->namespac
         Route::get('/room','ChatController@chat_room')->name('room');
         Route::post('/msg-save','ChatController@save_msg')->name('save-msg');
     });
+
+    // ads save search
+    Route::post('/save-search','FilterController@save_search')->name('save_search');
 
     // user profile routes
     // Route::get('/user-profile', 'HomeController@user_profile')->name('user_profile');
